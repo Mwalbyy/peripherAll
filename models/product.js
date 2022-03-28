@@ -9,42 +9,45 @@ Product.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+            autoIncrement: true
         },
         name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         price: {
             type: DataTypes.DECIMAL,
-            allowNull: false,
+            allowNull: false
         },
         image: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         category_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
                 model: 'category',
-                key: 'id',
+                key: 'id'
             }
         },
         description: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         link: {
             type: DataTypes.STRING,
-            allowNull: false,
-        },
+            allowNull: false
+        }
+    },
+    {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'product',
+        modelName: 'product'
     }
 );
+
 
 module.exports = Product;
