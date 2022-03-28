@@ -3,12 +3,20 @@ const Product = require('./product');
 const Category = require('./category');
 const Review = require('./review');
 
-User.manyToOne(Review, {
+User.hasMany(Review, {
     foreignKey: 'user_id',
 });
 
-Category.onToMany(Product, {
+Review.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+Category.hasMany(Product, {
     foreignKey: 'category_id',
 });
+
+Product.belongsTo(Category, {
+    foreignKey: 'category_id',
+})
 
 module.exports = {User, Product, Category, Review};
