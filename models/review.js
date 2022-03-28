@@ -27,7 +27,9 @@ Review.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             max: 5,
-        },
+        }
+    },
+    {
         sequelize,
         timestamps: false,
         freezeTableName: true,
