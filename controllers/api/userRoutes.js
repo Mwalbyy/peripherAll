@@ -3,29 +3,36 @@ const { User } = require('../../models');
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 
-router.post('/', async (req, res) => {
+router.post('/signup', async (req, res) => {
 try {
-    const userData = await User.create(req.body);
 
-    req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
-  
-        res.status(200).json(userData);
-      });
-    } catch (err) {
-      res.status(400).json(err);
-    }
+    const {userFromSignUp, passwordFromSignUp} = req.body;
+    
+    const newUser = await User.create({
+        userName: userFromSignUp,
+        hashedPassword: bcrypt.hashSync(passwordFromSignUp, bcrypt.genSaltSync()),
+    });
+    res.json(newUser);
+} catch (err) {
+    res.status(400).json(err);
+  }
+    
 });
 router.post('/login', async (req, res) => {
     try {
-      const userData = await User.findOne({ where: { email: req.body.email } });
+        // coming from front end
+        const {userFromSignUp, passwordFromSignUp} = req.body;
+
+        // find a user from the DB
+        const existingUser = await User.findOne({ userName: userFromSignUp});
+
+        // if no user is found
+        if(!existingUser) return res.json({ msg: `User Not Found` })
+
+        // if the user is found in the DB, compare password with hashed password
+        const doesPasswordMatch = bcrypt.compareSync(passwordFromSignUp, existingUser.hashedPassword);
   
-      if (!userData) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
+      
       }
   
       
