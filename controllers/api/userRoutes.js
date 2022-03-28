@@ -31,40 +31,19 @@ router.post('/login', async (req, res) => {
 
         // if the user is found in the DB, compare password with hashed password
         const doesPasswordMatch = bcrypt.compareSync(passwordFromSignUp, existingUser.hashedPassword);
+
+        // if the password does not match
+        if(!doesPasswordMatch) return res.json({ msg: `Passwords did not match` });
+
+        // if it matches this sends them back to front end
+        res.json(existingUser);
   
       
       }
-  
-      
-  
-      if (!validPassword) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
+        catch (err) {
+        res.status(400).json(err);
       }
-  
-      req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
-        
-        res.json({ user: userData, message: 'You are now logged in!' });
-      });
-  
-    } catch (err) {
-      res.status(400).json(err);
-    }
-  });
-  
-  router.post('/logout', (req, res) => {
-    if (req.session.logged_in) {
-      req.session.destroy(() => {
-        res.status(204).end();
-      });
-    } else {
-      res.status(404).end();
-    }
-  });
+    })
   
   module.exports = router;
   
