@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Product, Review } = require('../../models');
 
 // get all review
-router.get('/', async, (res, req) => {
+router.get('/', async (res, req) => {
     try {
         const reviewData = await Review.findAll(req.params.id, {
             include: [{ model: Product }]
@@ -16,7 +16,7 @@ router.get('/', async, (res, req) => {
 
 
 //single review
-router.get('/:id', async, (res, req) => {
+router.get('/:id', async (res, req) => {
     try {
         const reviewData = await Review.findByPk(req.params.id, {
             include: [{ model: Product }]
