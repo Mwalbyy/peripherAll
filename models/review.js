@@ -11,6 +11,14 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        product_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'product',
+                key: 'id',
+            }
+        },
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
