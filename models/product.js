@@ -36,7 +36,7 @@ Product.init(
             allowNull: false
         },
         link: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(1000),
             allowNull: false
         }
     },
