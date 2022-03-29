@@ -1,0 +1,27 @@
+<div class="navbar">
+    <div class="logo">
+        <a href="main.handlebars">LOGO</a>
+    </div>
+    <div class="navLeft">
+        <button class="dropDownBtn" href="#">
+            categories
+            <i class="fa-solid fa-caret-right fa-xs"></i>
+        </button>
+        <div class="dropDown">
+            {{#each categories as |category|}}
+            <a href="">{{{category.name}}}</a>
+            {{/each}}
+        </div>
+    </div>
+    <div class="navRight">
+        <input class="search spaced" type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+        </input>
+        <a class="spaced" href="#">Bookmarks
+            <i class="fa-solid fa-bookmark fa-xs"></i>
+        </a>
+        <a class="spaced" href="#">login
+            <i class="fa-solid fa-door-open fa-xs"></i>
+        </a>
+    </div>
+</div>

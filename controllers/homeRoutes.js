@@ -5,11 +5,12 @@ router.get("/", async (req, res) => {
   try {
     const categoryData = await Category.findAll({});
 
-    const products = categoryData.map((product) =>
-      product.get({ plain: true })
-    );
+    const categories = categoryData.map((category) =>
+      category.get({ plain: true })
+      );
+      console.log(categories)
     res.render("homepage", {
-      products,
+      categories,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
