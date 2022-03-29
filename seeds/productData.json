@@ -11,5 +11,50 @@
         "link": "https://www.amazon.com/Glorious-Model-Wireless-Gaming-Mouse/dp/B09J58SZDW/ref=sr_1_2?crid=1KKKITJYP4789&keywords=glorious+pc+gaming+model+d+wireless&qid=1648567111&s=books&sprefix=glorious+pc+gaming+model+d+wireless%2Cstripbooks%2C53&sr=1-2",
 
         "category_id": 7
+    },
+    {
+        "name": "Samsung 49-inch Odyssey G9 Gaming Monitor",
+
+        "price": 1190,
+        
+        "image":"./samsung-odyssey-G9.jpg",
+        
+        "description": "Samsung's Largest 1000R Gaming Monitor: Get your head in the game with the 49 inch Odyssey G9, which matches the curve of the human eye, for maximum immersion and minimal eye strain, and the screen space of two 27 inch panels.",
+        
+        "link": "https://www.amazon.com/SAMSUNG-49-inch-Odyssey-FreeSync-LC49G95TSSNXZA/dp/B088HH6LW5/ref=sr_1_2?keywords=odyssey%2Bg9&qid=1648574055&sprefix=ody%2Caps%2C114&sr=8-2&th=1", 
+
+        "category_id": 1
+    },
+    {
+        "name": "ASUS VG278Q 27-inch",
+        "price": 279.99,
+        "image": "./Asus-27-inch.jpg",
+        "description": "27-inch Full HD (1920x1080) Panel 144Hz refresh rate and 1ms (GTG) response time gaming monitor and free Sync/Adaptive Sync for a tear-free experience.",
+        "link": "https://www.amazon.com/VG278Q-G-Sync-Compatible-Adaptive-Monitor/dp/B074JLD4HZ?th=1",
+        "category_id": 1
+    },
+    {
+        "name": "Sceptre 24-inch Professional Thin 75hz",
+        "price": 125.00,
+        "image": "./sceptre-24-inch.jpg",
+        "description": "24-inch Ultra slim profile. Contemporary sleek metallic design",
+        "link": "https://www.amazon.com/Sceptre-E248W-19203R-Monitor-Speakers-Metallic/dp/B0773ZY26F/ref=sr_1_4?crid=2IDDU4GUGJQBC&keywords=monitor&qid=1648574754&s=electronics&sprefix=monito%2Celectronics%2C80&sr=1-4&th=1",
+        "category_id": 1
+    },
+    {
+        "name": "“Alienware 120Hz UltraWide Gaming Monitor 34 Inch",
+        "price": 711.98,
+        "image": "./alienware-34-inch.jpg",
+        "description": "“Experience breathtaking views with a combination of immersive features",
+        "link": "https://www.amazon.com/Alienware-Curved-NVIDIA-Edgelight-Monitor/dp/B07YLGH9Q5/ref=sr_1_4?keywords=alienware+qd-oled+monitor&qid=1648575018&s=electronics&sprefix=alienware+q%2Celectronics%2C70&sr=1-4",
+        "category_id": 1
+    },
+    {
+        "name": "LG 27GN950-B Ultragear Gaming Monitor 27-inch UHD",
+        "price": 892.88,
+        "image": "./LG27GN950.jpg",
+        "description": "The LG UltraGear is the first 4K Nano IPS 1ms gaming monitor that'll properly show off your superpowered GPU. This 4K 27-inch HDR monitor has a 144Hz refresh rate and 1ms response time, which is kind of wild for a 4K monitor. What is most impressive, however, is the Nano IPS tech that offers a wider color gamut and stellar viewing angles.",
+        "link": "https://www.amazon.com/LG-27GN950-B-Ultragear-Response-Compatibility/dp/B08BCRYS6B/ref=sr_1_3?crid=1S1PUPQSJJ034&keywords=LG%2B27GN950-B&qid=1648575276&s=electronics&sprefix=lg%2B27gn950-b%2Celectronics%2C68&sr=1-3&th=1",
+        "category_id": 1
     }
 ]
