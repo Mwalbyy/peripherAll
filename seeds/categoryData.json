@@ -1,20 +1,30 @@
 [
     {
-        "name": "Monitors"
+        "name": "Monitors",
+        "id": 1
     },
     {
-        "name": "Keyboards"
+        "name": "Keyboards",
+        "id": 2
     },
     {
-        "name": "Mouse Pads"
+        "name": "Mouse Pads",
+        "id": 3
     },
     {
-        "name": "Headsets"
+        "name": "Headsets",
+        "id": 4
     },
     {
-        "name": "Webcams"
+        "name": "Webcams",
+        "id": 5
     },
     {
-        "name": "Speakers"
+        "name": "Speakers",
+        "id": 6
+    },
+    {
+        "name": "Mouse",
+        "id": 7
     }
 ]

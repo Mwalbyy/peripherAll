@@ -2,13 +2,17 @@ const router = require('express').Router();
 const { Product, Review } = require('../../models');
 
 // get all review
-router.get('/', async (res, req) => {
+router.get('/', async (req, res) => {
     try {
-        const reviewData = await Review.findAll(req.params.id, {
+        const reviewData = await Review.findAll({
             include: [{ model: Product }]
         });
+        
+        const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.status(200).json(reviewData);
+        res.render('homepage', {
+            reviews
+        });
     } catch(err) {
         res.status(500).json(err);
     }
@@ -16,7 +20,7 @@ router.get('/', async (res, req) => {
 
 
 //single review
-router.get('/:id', async (res, req) => {
+router.get('/:id', async (req, res) => {
     try {
         const reviewData = await Review.findByPk(req.params.id, {
             include: [{ model: Product }]
