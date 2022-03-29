@@ -24,13 +24,13 @@ router.post('/login', async (req, res) => {
         const {userFromSignUp, passwordFromSignUp} = req.body;
 
         // find a user from the DB
-        const existingUser = await User.findOne({ userName: userFromSignUp});
+        const existingUser = await User.findOne({ user_name: userFromSignUp});
 
         // if no user is found
         if(!existingUser) return res.json({ msg: `User Not Found` })
 
         // if the user is found in the DB, compare password with hashed password
-        const doesPasswordMatch = bcrypt.compareSync(passwordFromSignUp, existingUser.hashedPassword);
+        const doesPasswordMatch = bcrypt.compareSync(passwordFromSignUp, existingUser.password);
 
         // if the password does not match
         if(!doesPasswordMatch) return res.json({ msg: `Passwords did not match` });
