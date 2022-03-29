@@ -58,6 +58,46 @@
         "category_id": 1
     },
     {
+        "name": "The Shogun The Mousepad Company DuraGlyde",
+        "price": 59.99,
+        "image": "./shogun-mousepad.jpg",
+        "description": "Samurai fighting a water dragon",
+        "link": "https://www.amazon.com/Shogun-Mousepad-Company-DuraGlyde-x18/dp/B09D4V5NC3/ref=sr_1_2?crid=O2PL33W246OH&keywords=the%2Bmousepad%2Bcompany&qid=1648577057&sprefix=the%2Bmousepad%2Bcompany%2Caps%2C87&sr=8-2&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Razer Goliathus Extended Chroma Gaming Mousepad",
+        "price": 39.99,
+        "image": "./razer-chroma-mousepad.jpg",
+        "description": "Razer mousepad with RGB lights around the perimeter",
+        "link": "https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_5?keywords=razer%2Bmouse%2Bpad&qid=1648577581&sprefix=razor%2Bmouse%2Caps%2C86&sr=8-5&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Mouse Pad Wrist Support Keyboard Wrist Rest",
+        "price": 8.98,
+        "image": "./ergo-mousepad.jpg",
+        "description": "Ergonomic mousepad with map of the Americas",
+        "link": "https://www.amazon.com/Gaming-Support-iKammo-Memory-Working/dp/B07PZ2YC9P/ref=sr_1_11?crid=1YF4LC732PRDO&keywords=ergo+mouse+pad&qid=1648578288&sprefix=ergo+mouse+pad%2Caps%2C78&sr=8-11",
+        "category_id": 3
+    },
+    {
+        "name": "Nets Basketball Large Rectangular Mousepad",
+        "price": 9.94,
+        "image": "./brooklyn-nets-mousepad.jpg",
+        "description": "Support the Brooklyn Nets with this mousepad!",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "Iron Man Mousepad",
+        "price": 9.99,
+        "image": "./iron-man-mousepad.jpg",
+        "description": "Iron man and arc reactor graphic mousepad",
+        "link": "https://www.amazon.com/Non-Slip-Mousepad-Computer-Accessories-Supplies/dp/B08X6RH1JB/ref=sr_1_5?crid=20MX7TDWDOVB2&keywords=iron+man+mouse+pad&qid=1648578906&sprefix=iron+man+mouse+pad%2Caps%2C67&sr=8-5",
+        "category_id": 3
+    },
+    {
         "name": "Logitech G502 Lightspeed Wireless",
 
         "price": 149.99,
