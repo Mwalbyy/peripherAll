@@ -7,25 +7,21 @@ const reviewData = require('./reviewData.json');
 const userData = require('./userData.json');
 
 const seedAll = async () => {
+    try {
     await sequelize.sync({ force: true });
 
     const users = await User.bulkCreate(userData, {
         individualHooks: true,
-        returning: true,
       });
     
-    const categories = await Category.(categoryData, {
+    const categories = await Category.bulkCreate(categoryData);
+    const products = await Product.bulkCreate(productData);
+    const reviews = await Review.bulkCreate(reviewData);
 
-    });
-
-    for (const product of productData) {
-        await Product.create({
-            ...product,
-
-        })
-    }
+    console.log('databaseSeeded');
 
     process.exit(0);
+    }catch(err){console.log(err)};
 };
 
 seedAll();
