@@ -136,7 +136,30 @@
         "category_id": 2
     },
     {
-        
+        "name": "HyperX Cloud II Wireless Gaming Headset",
+
+        "price": 129.99,
+
+        "image": "./Hyperx-Cloud2.jpg",
+
+        "description": "The HyperX Cloud II was built to be an ultra-comfortable gaming headset. As millions continue to utilize it as their preferred gaming headset, we proudly present the HyperX Cloud II Wireless.",
+
+        "link": "https://www.amazon.com/HyperX-Cloud-Wireless-Detachable-Cancelling/dp/B08NTYB4M7/ref=sr_1_1_sspa?crid=AMAMPFDI7BL1&keywords=HyperX+Cloud+II+Wireless+Gaming+Headset&qid=1648578492&s=electronics&sprefix=hyperx+cloud+ii+wireless+gaming+headset%2Celectronics%2C93&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFRM0xQNEhBNVRJUksmZW5jcnlwdGVkSWQ9QTA5OTgzMzQzNDlTSTkzNDU2NlNHJmVuY3J5cHRlZEFkSWQ9QTA3OTE0NjcyOFAwTVJKUjVGQlJNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==",
+
+        "category_id": 4
+    },
+    {
+        "name": "Corsair Void RGB Elite Wireless Gaming Headset",
+
+        "price": 74.99,
+
+        "image": "./Corsair-Void.jpeg",
+
+        "description": "Immerse yourself in the action with the CORSAIR VOID RGB ELITE Wireless, with custom-tuned 50mm neodymium audio drivers delivering 7.1 surround sound on PC. Microfiber mesh fabric and memory foam earpads provide lasting comfort.",
+
+        "link": "https://www.amazon.com/Corsair-Wireless-Premium-Headset-Surround/dp/B07X8SJ8HM/ref=sr_1_3?keywords=corsair+void+rgb+elite+wireless&qid=1648578759&s=electronics&sprefix=corsair+void+rgb+elite%2Celectronics%2C58&sr=1-3",
+
+        "category_id": 4
     }
 
 ]
