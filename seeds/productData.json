@@ -54,7 +54,47 @@
         "price": 892.88,
         "image": "./LG27GN950.jpg",
         "description": "The LG UltraGear is the first 4K Nano IPS 1ms gaming monitor that'll properly show off your superpowered GPU. This 4K 27-inch HDR monitor has a 144Hz refresh rate and 1ms response time, which is kind of wild for a 4K monitor. What is most impressive, however, is the Nano IPS tech that offers a wider color gamut and stellar viewing angles.",
-        "link": "https://www.amazon.com/LG-27GN950-B-Ultragear-Response-Compatibility/dp/B08BCRYS6B/ref=sr_1_3?crid=1S1PUPQSJJ034&keywords=LG%2B27GN950-B&qid=1648575276&s=electronics&sprefix=lg%2B27gn950-b%2Celectronics%2C68&sr=1-3&th=1",
+        "link": "",
         "category_id": 1
+    },
+    {
+        "name": "",
+        "price": ,
+        "image": "",
+        "description": "",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "",
+        "price": ,
+        "image": "",
+        "description": "",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "",
+        "price": ,
+        "image": "",
+        "description": "",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "",
+        "price": ,
+        "image": "",
+        "description": "",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "",
+        "price": ,
+        "image": "",
+        "description": "",
+        "link": "",
+        "category_id": 3
     }
 ]
