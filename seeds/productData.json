@@ -108,6 +108,35 @@
         "link": "https://www.amazon.com/Corsair-K100-Mechanical-Gaming-Keyboard/dp/B08HR68MQZ/ref=sr_1_1_sspa?crid=1TQX3OWXMOSF5&keywords=corsair+k100&qid=1648572847&s=electronics&sprefix=corsair+k100%2Celectronics%2C74&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSlBCT0tPSU9FWUEyJmVuY3J5cHRlZElkPUEwNTkxMzQ5MzE4SE80N0FRMzhEVyZlbmNyeXB0ZWRBZElkPUEwOTcxNzI0MThVN09BNUxBVDNOMiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
 
         "category_id": 2
+    },
+    {
+        "name": "Logitech MX Keys",
+
+        "price": 119.99,
+
+        "image": "./Logitech-MX.png",
+
+        "description": "Introducing MX Keys, an advanced wireless illuminated keyboard featuring Perfect Stroke keys shaped for your fingertips, smart illumination, and a remarkably solid build",
+
+        "link": "https://www.amazon.com/Logitech-Advanced-Wireless-Illuminated-Keyboard/dp/B07S92QBCJ/ref=sr_1_1_sspa?crid=1P51JGBXQTIX1&keywords=logitech+mx+keys&qid=1648573223&s=electronics&sprefix=logitech+mx+keys%2Celectronics%2C217&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWTJFMFY0RFBMREJZJmVuY3J5cHRlZElkPUEwMjQ1NDczM0hMWVUzVVo2MUpLNiZlbmNyeXB0ZWRBZElkPUEwNzM5NDI4MTNRM05IREswMjJNTiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+
+        "category_id": 2
+    },
+    {
+        "name": "MacAlly Mini USB C Keyboard",
+
+        "price": 29.99,
+
+        "image": "./MacAlly-Mini.webp",
+
+        "description": "Supports USB-C enabled computers, iPad Pro and Android devices. Compatible with USB-C equipped Chromebooks 78 full size thin keycaps for a comfortable and efficient typing experience 13 convenient shortcut keys for one-touch control of Mac applications.",
+
+        "link": "https://www.amazon.com/Macally-Multisync-Wireless-Bluetooth-Smartphones/dp/B07GT6WBL3/ref=sr_1_3?crid=25E79ZDGULHG1&keywords=macally+mini+usb+c+keyboard&qid=1648574154&s=electronics&sprefix=macalley+mini+usb+c+keyboard%2Celectronics%2C63&sr=1-3",
+
+        "category_id": 2
+    },
+    {
+        
     }
 
 ]
