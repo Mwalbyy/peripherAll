@@ -5,17 +5,13 @@ router.get("/", async (req, res) => {
   try {
     const categoryData = await Category.findAll({});
 
-    const projects = categoryData.map((project) =>
-      project.get({ plain: true })
+    const products = categoryData.map((product) =>
+      product.get({ plain: true })
     );
-
-    res.render(
-      // "category", 
-    // {
-    //   projects,
-    //   logged_in: req.session.logged_in,
-    // }
-    );
+    res.render("homepage", {
+      products,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
