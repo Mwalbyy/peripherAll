@@ -214,15 +214,54 @@
         "category_id": 6
     },
     {
-        "name": "Logitech z407 Bluetooth Computer Speakers",
+        "name": "Creative Labs Pebble USB Computer Speakers",
 
-        "price": 82.99,
+        "price": 24.99,
 
-        "image": "./Logitech-Z407.jpg",
+        "image": "./Creative-Pebble.jpeg",
 
-        "description": "80 watts of power joins precise digital signal processing (DSP) to deliver immersive, lifelike sound. Hear the crisp high notes, the powerful mid and low-range, and all the bass you can handle. The wireless control dial and dual-position speakers let you control your sound and style.",
+        "description": "Designed with a clean and modern look in mind, Pebble V2 follows the same form factor as Creative Pebble, and fits into any minimalists office, home, workspace, and battlestation setup.",
 
-        "link": "https://www.amazon.com/Logitech-Bluetooth-Computer-Subwoofer-Immersive/dp/B091FSM3R3/ref=sr_1_5?keywords=logitech+z407+bluetooth+computer+speakers&qid=1648579817&s=electronics&sprefix=logitech+z407%2Celectronics%2C68&sr=1-5",
+        "link": "https://www.amazon.com/Creative-USB-Powered-Speakers-Far-Field-Radiators/dp/B0791H74NT/ref=sr_1_1_sspa?keywords=creative+pebble+v3&qid=1648580105&s=electronics&sprefix=creative+%2Celectronics%2C61&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFN0pGSTcwWTgzRSZlbmNyeXB0ZWRJZD1BMDc3MTMzMjJDN05WVjdIRkVXMSZlbmNyeXB0ZWRBZElkPUExMDM3NTE0MklPNlBSUE5aMlNKWCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+
+        "category_id": 6
+    },
+    {
+        "name": "Mackie CRX-3 Stereo Computer Monitors",
+
+        "price": 99.99,
+
+        "image": "./Mackie-CRX.jpg",
+
+        "description": "CR Series Creative Reference Multimedia Monitors offer studio-quality sound with cosmetics that compliment any desk whether you?re making music, creating content, or just relaxing to your favorite tunes.",
+
+        "link": "https://www.amazon.com/Mackie-Multimedia-Monitors-Professional-Studio-Quality/dp/B08J835J47/ref=sr_1_12?keywords=mackie+cr3x&qid=1648580386&sr=8-12",
+
+        "category_id": 6
+    },
+    {
+        "name": "Edifier R1280DB Powered Computer Speakers",
+
+        "price": 139.99,
+
+        "image": "./Edifier-R1280DB.jpg",
+
+        "description": "The R1280DB has the classic look you love with all new features of modern powered Bluetooth speakers. The clean wooden finish of the R1280DB bookshelf speakers leave a lasting impression of elegance and luxury.",
+
+        "link": "https://www.amazon.com/Edifier-R1280DB-Bluetooth-Bookshelf-Speakers/dp/B06XGG6MFV/ref=sr_1_5?crid=V5F70U6WS6Y0&keywords=Edifier%2BR1280DB&qid=1648580615&sprefix=edifier%2Br1280db%2Caps%2C46&sr=8-5&th=1",
+
+        "category_id": 6
+    },
+    {
+        "name": "Logitech Z906 5.1 Surround Sound Computer Speakers",
+
+        "price": 346.99,
+
+        "image": "./Logitech-Z906.jpg",
+
+        "description": "Hear every detail, all around you - this THX-Certified system delivers theater-quality surround sound for your movies, games and music. The Logitech Z906 Speaker system packs a lot of bang for your buck.",
+
+        "link": "https://www.amazon.com/Logitech-Surround-Sound-Speaker-System/dp/B004M18O60/ref=sr_1_3?crid=3MGKHO7056ZZ6&keywords=Logitech+Z906+5.1+Surround+Sound+Computer+Speakers&qid=1648580822&sprefix=logitech+z906+5.1+surround+sound+computer+speakers%2Caps%2C220&sr=8-3",
 
         "category_id": 6
     }
