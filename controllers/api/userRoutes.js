@@ -3,61 +3,47 @@ const { User } = require('../../models');
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 
-router.post('/', async (req, res) => {
+router.post('/signup', async (req, res) => {
 try {
-    const userData = await User.create(req.body);
 
-    req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
-  
-        res.status(200).json(userData);
-      });
-    } catch (err) {
-      res.status(400).json(err);
-    }
+    const {userFromSignUp, passwordFromSignUp} = req.body;
+    
+    const newUser = await User.create({
+        userName: userFromSignUp,
+        hashedPassword: bcrypt.hashSync(passwordFromSignUp, bcrypt.genSaltSync()),
+    });
+    res.json(newUser);
+} catch (err) {
+    res.status(400).json(err);
+  }
+    
 });
 router.post('/login', async (req, res) => {
     try {
-      const userData = await User.findOne({ where: { email: req.body.email } });
-  
-      if (!userData) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
-      }
+        // coming from front end
+        const {userFromSignUp, passwordFromSignUp} = req.body;
+
+        // find a user from the DB
+        const existingUser = await User.findOne({ user_name: userFromSignUp});
+
+        // if no user is found
+        if(!existingUser) return res.json({ msg: `User Not Found` })
+
+        // if the user is found in the DB, compare password with hashed password
+        const doesPasswordMatch = bcrypt.compareSync(passwordFromSignUp, existingUser.password);
+
+        // if the password does not match
+        if(!doesPasswordMatch) return res.json({ msg: `Passwords did not match` });
+
+        // if it matches this sends them back to front end
+        res.json(existingUser);
   
       
-  
-      if (!validPassword) {
-        res
-          .status(400)
-          .json({ message: 'Incorrect email or password, please try again' });
-        return;
       }
-  
-      req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
-        
-        res.json({ user: userData, message: 'You are now logged in!' });
-      });
-  
-    } catch (err) {
-      res.status(400).json(err);
-    }
-  });
-  
-  router.post('/logout', (req, res) => {
-    if (req.session.logged_in) {
-      req.session.destroy(() => {
-        res.status(204).end();
-      });
-    } else {
-      res.status(404).end();
-    }
-  });
+        catch (err) {
+        res.status(400).json(err);
+      }
+    })
   
   module.exports = router;
   
