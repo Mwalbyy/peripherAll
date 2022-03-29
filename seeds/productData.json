@@ -61,7 +61,7 @@
 
         "price": 39.99,
 
-        "image": "./Logitech-G600",
+        "image": "./Logitech-G600.jpeg",
 
         "description": "With 20 buttons, the Logitech G600 MMO Gaming Mouse is the most customizable and easy-to-use mouse specifically designed for mastering your favorite MMOs",
 
@@ -69,5 +69,45 @@
 
         
         "category_id": 7
+    },
+    {
+        "name": "Logitech G513 Gaming Keyboard",
+
+        "price": 127.99,
+
+        "image": "./Logitech-G513.jpeg",
+
+        "description": "G513 is a high performance LIGHTSYNC RGB mechanical gaming keyboard with choice of mechanical key switches and USB pass-through in a modern and sleek design",
+
+        "link": "https://www.amazon.com/Logitech-LIGHTSYNC-Mechanical-Keyboard-Switches/dp/B07QRGGCGP/ref=sr_1_3?crid=105IH92QIZ0JE&keywords=logitech+g513&qid=1648572169&s=electronics&sprefix=logitech+g513%2Celectronics%2C80&sr=1-3",
+
+        "category_id": 2
+    },
+    {
+        "name": "Razer BlackWidow V3 Gaming Keyboard",
+
+        "price": 102.99,
+
+        "image": "./Razer-BlackWidow.png",
+
+        "description": "The name that started it all returns to reassert its dominance. Feel the difference with the Razer BlackWidow V3, backed by a legacy as the first and most iconic mechanical gaming keyboard, and armed with new, improved features including our world-renowned switches.",
+
+        "link": "https://www.amazon.com/Razer-BlackWidow-Mechanical-Gaming-Keyboard/dp/B08FQPLCNC/ref=sr_1_3?crid=26TJIK9DDNC1K&keywords=razer+blackwidow+v3&qid=1648572595&s=electronics&sprefix=razer+blackwidow+v3%2Celectronics%2C60&sr=1-3",
+
+        "category_id": 2
+    },
+    {
+        "name": "Corsair K100 Gaming Keyboard",
+
+        "price": 199.99,
+
+        "image": "./Corsair-K100.jpg",
+
+        "description": "The incomparable CORSAIR K100 RGB Optical-Mechanical Gaming Keyboard combines stunning aluminum design with per-key RGB lighting and a 44-zone LightEdge.",
+
+        "link": "https://www.amazon.com/Corsair-K100-Mechanical-Gaming-Keyboard/dp/B08HR68MQZ/ref=sr_1_1_sspa?crid=1TQX3OWXMOSF5&keywords=corsair+k100&qid=1648572847&s=electronics&sprefix=corsair+k100%2Celectronics%2C74&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSlBCT0tPSU9FWUEyJmVuY3J5cHRlZElkPUEwNTkxMzQ5MzE4SE80N0FRMzhEVyZlbmNyeXB0ZWRBZElkPUEwOTcxNzI0MThVN09BNUxBVDNOMiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+
+        "category_id": 2
     }
+
 ]
