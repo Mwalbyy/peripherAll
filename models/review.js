@@ -11,9 +11,10 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        text: {
-            type: DataTypes.STRING,
+        date_created: {
+            type: DataTypes.DATE,
             allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -27,7 +28,11 @@ Review.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             max: 5,
-        }
+        },
+        text: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,
