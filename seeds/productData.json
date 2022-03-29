@@ -13,6 +13,91 @@
         "category_id": 7
     },
     {
+        "name": "Samsung 49-inch Odyssey G9 Gaming Monitor",
+
+        "price": 1190,
+        
+        "image":"./samsung-odyssey-G9.jpg",
+        
+        "description": "Samsung's Largest 1000R Gaming Monitor: Get your head in the game with the 49 inch Odyssey G9, which matches the curve of the human eye, for maximum immersion and minimal eye strain, and the screen space of two 27 inch panels.",
+        
+        "link": "https://www.amazon.com/SAMSUNG-49-inch-Odyssey-FreeSync-LC49G95TSSNXZA/dp/B088HH6LW5/ref=sr_1_2?keywords=odyssey%2Bg9&qid=1648574055&sprefix=ody%2Caps%2C114&sr=8-2&th=1", 
+
+        "category_id": 1
+    },
+    {
+        "name": "ASUS VG278Q 27-inch",
+        "price": 279.99,
+        "image": "./Asus-27-inch.jpg",
+        "description": "27-inch Full HD (1920x1080) Panel 144Hz refresh rate and 1ms (GTG) response time gaming monitor and free Sync/Adaptive Sync for a tear-free experience.",
+        "link": "https://www.amazon.com/VG278Q-G-Sync-Compatible-Adaptive-Monitor/dp/B074JLD4HZ?th=1",
+        "category_id": 1
+    },
+    {
+        "name": "Sceptre 24-inch Professional Thin 75hz",
+        "price": 125.00,
+        "image": "./sceptre-24-inch.jpg",
+        "description": "24-inch Ultra slim profile. Contemporary sleek metallic design",
+        "link": "https://www.amazon.com/Sceptre-E248W-19203R-Monitor-Speakers-Metallic/dp/B0773ZY26F/ref=sr_1_4?crid=2IDDU4GUGJQBC&keywords=monitor&qid=1648574754&s=electronics&sprefix=monito%2Celectronics%2C80&sr=1-4&th=1",
+        "category_id": 1
+    },
+    {
+        "name": "“Alienware 120Hz UltraWide Gaming Monitor 34 Inch",
+        "price": 711.98,
+        "image": "./alienware-34-inch.jpg",
+        "description": "“Experience breathtaking views with a combination of immersive features",
+        "link": "https://www.amazon.com/Alienware-Curved-NVIDIA-Edgelight-Monitor/dp/B07YLGH9Q5/ref=sr_1_4?keywords=alienware+qd-oled+monitor&qid=1648575018&s=electronics&sprefix=alienware+q%2Celectronics%2C70&sr=1-4",
+        "category_id": 1
+    },
+    {
+        "name": "LG 27GN950-B Ultragear Gaming Monitor 27-inch UHD",
+        "price": 892.88,
+        "image": "./LG27GN950.jpg",
+        "description": "The LG UltraGear is the first 4K Nano IPS 1ms gaming monitor that'll properly show off your superpowered GPU. This 4K 27-inch HDR monitor has a 144Hz refresh rate and 1ms response time, which is kind of wild for a 4K monitor. What is most impressive, however, is the Nano IPS tech that offers a wider color gamut and stellar viewing angles.",
+        "link": "",
+        "category_id": 1
+    },
+    {
+        "name": "The Shogun The Mousepad Company DuraGlyde",
+        "price": 59.99,
+        "image": "./shogun-mousepad.jpg",
+        "description": "Samurai fighting a water dragon",
+        "link": "https://www.amazon.com/Shogun-Mousepad-Company-DuraGlyde-x18/dp/B09D4V5NC3/ref=sr_1_2?crid=O2PL33W246OH&keywords=the%2Bmousepad%2Bcompany&qid=1648577057&sprefix=the%2Bmousepad%2Bcompany%2Caps%2C87&sr=8-2&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Razer Goliathus Extended Chroma Gaming Mousepad",
+        "price": 39.99,
+        "image": "./razer-chroma-mousepad.jpg",
+        "description": "Razer mousepad with RGB lights around the perimeter",
+        "link": "https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_5?keywords=razer%2Bmouse%2Bpad&qid=1648577581&sprefix=razor%2Bmouse%2Caps%2C86&sr=8-5&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Mouse Pad Wrist Support Keyboard Wrist Rest",
+        "price": 8.98,
+        "image": "./ergo-mousepad.jpg",
+        "description": "Ergonomic mousepad with map of the Americas",
+        "link": "https://www.amazon.com/Gaming-Support-iKammo-Memory-Working/dp/B07PZ2YC9P/ref=sr_1_11?crid=1YF4LC732PRDO&keywords=ergo+mouse+pad&qid=1648578288&sprefix=ergo+mouse+pad%2Caps%2C78&sr=8-11",
+        "category_id": 3
+    },
+    {
+        "name": "Nets Basketball Large Rectangular Mousepad",
+        "price": 9.94,
+        "image": "./brooklyn-nets-mousepad.jpg",
+        "description": "Support the Brooklyn Nets with this mousepad!",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "Iron Man Mousepad",
+        "price": 9.99,
+        "image": "./iron-man-mousepad.jpg",
+        "description": "Iron man and arc reactor graphic mousepad",
+        "link": "https://www.amazon.com/Non-Slip-Mousepad-Computer-Accessories-Supplies/dp/B08X6RH1JB/ref=sr_1_5?crid=20MX7TDWDOVB2&keywords=iron+man+mouse+pad&qid=1648578906&sprefix=iron+man+mouse+pad%2Caps%2C67&sr=8-5",
+        "category_id": 3
+    },
+    {
         "name": "Logitech G502 Lightspeed Wireless",
 
         "price": 149.99,
@@ -24,8 +109,6 @@
         "link": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_1?crid=JTX95JN5X6FI&keywords=Logitech+G+G502+LIGHTSPEED&qid=1648568104&s=books&sprefix=logitech+g+g502+lightspeed+%2Cstripbooks%2C77&sr=1-1",
 
         "category_id": 7
-
-
     },
     {
         "name": "Razer Viper Ultimate Gaming Mouse",
@@ -39,8 +122,6 @@
         "link": "https://www.amazon.com/Razer-Ultimate-Lightest-Wireless-Gaming/dp/B08565C5BB/ref=sr_1_2?crid=39295SD5IUG1X&keywords=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse&qid=1648568372&s=books&sprefix=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse%2Cstripbooks%2C44&sr=1-2-catcorr&th=1",
 
         "category_id": 7
-
-
     },
     {
         "name": "Logitech MX Master 3",
@@ -53,7 +134,6 @@
 
         "link": "https://www.amazon.com/Logitech-Master-Advanced-Wireless-Mouse/dp/B07S395RWD/ref=sr_1_1?crid=2M6RC04FSSUXO&keywords=logitech+mx+master+3&qid=1648568640&s=books&sprefix=logitech+mx+master+3%2Cstripbooks%2C48&sr=1-1",
 
-        
         "category_id": 7
     },
     {
@@ -66,7 +146,6 @@
         "description": "With 20 buttons, the Logitech G600 MMO Gaming Mouse is the most customizable and easy-to-use mouse specifically designed for mastering your favorite MMOs",
 
         "link": "https://www.amazon.com/Logitech-Gaming-Backlit-Programmable-Buttons/dp/B0086UK7IQ/ref=sr_1_1?crid=27RD1NH7HRBM&keywords=logitech+g600&qid=1648568990&s=books&sprefix=logitech+g600%2Cstripbooks%2C69&sr=1-1",
-
         
         "category_id": 7
     },
@@ -136,7 +215,44 @@
         "category_id": 2
     },
     {
-        
+        "name": "Logitech c920x HD Pro Webcam",
+        "price": 69.99,
+        "image": "./logitech-c920x-webcam.jpg",
+        "description": "Full HD 1080p video calling and recording at 30 fps - You will make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.",
+        "link": "https://www.amazon.com/Logitech-C920x-Pro-HD-Webcam/dp/B085TFF7M1/ref=sr_1_3?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648579843&sprefix=webcam%2Caps%2C85&sr=8-3&th=1",
+        "category_id": 5
+    },
+    {
+        "name": "NexiGo N60 1080P Web Camera",
+        "price": 39.99,
+        "image": "./nexigo-webcam.jpg",
+        "description": "Powered by a 1080p FHD two-MP CMOS, the NexiGo N60 Webcam produces exceptionally sharp and clear videos at resolutions up to 1920 x 1080 with 30fps. The 3.6mm glass lens provides a crisp image at fixed distances and is optimized between 19.6 inches to 13 feet, making it ideal for almost any indoor use.",
+        "link": "“https://www.amazon.com/Microphone-NexiGo-Computer-110-degree-Conferencing/dp/B088TSR6YJ/ref=sr_1_4?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-4",
+        "category_id": 5
+    },
+    {
+        "name": "Logitech C270 HD Webcam",
+        "price": 17.99,
+        "image": "./logitech-c270-webcam.jpg",
+        "description": "HD 720p video calling and HD video recording, 2.4 GigaHertz Intel Core2 Duo, 2 GB RAM,200 MB hard drive space",
+        "link": "https://www.amazon.com/Logitech-Desktop-Widescreen-Calling-Recording/dp/B004FHO5Y6/ref=sr_1_8?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-8",
+        "category_id": 5
+    },
+    {
+        "name": "Logitech Brio 4k Webcam Ultra 4K HD",
+        "price": 165.10,
+        "image": "./logitech-brio-webcam.jpg",
+        "description": "Ultra 4K HD resolution: 4 times the resolution of a typical HD webcam; look your best and enjoy professional video experience wherever you are with 5x HD zoom.",
+        "link": "https://www.amazon.com/Logitech-Calling-Noise-Canceling-Correction-Microsoft/dp/B01N5UOYC4/ref=sr_1_9?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-9&th=1",
+        "category_id": 5
+    },
+    {
+        "name": "HOBFU 1080P Webcam with Microphone",
+        "price": 8.99,
+        "image": "./hobfu-webcam.jpg",
+        "description": "Streaming IP webcam operates in 1080p video at 30-fps, whether you're on Skype or streaming yourself gaming delivers crystal clear images. Face enhancement technology automatically optimizes the image so you look more beautiful in the video.",
+        "link": "https://www.amazon.com/Webcam-Microphone-Desktop-Facial-Enhancement-Technology/dp/B08JLQGTKZ/ref=sr_1_16?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-16&th=1",
+        "category_id": 5
     }
 
 ]
