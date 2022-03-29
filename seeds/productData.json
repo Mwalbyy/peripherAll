@@ -215,6 +215,136 @@
         "category_id": 2
     },
     {
+        "name": "HyperX Cloud II Wireless Gaming Headset",
+
+        "price": 129.99,
+
+        "image": "./Hyperx-Cloud2.jpg",
+
+        "description": "The HyperX Cloud II was built to be an ultra-comfortable gaming headset. As millions continue to utilize it as their preferred gaming headset, we proudly present the HyperX Cloud II Wireless.",
+
+        "link": "https://www.amazon.com/HyperX-Cloud-Wireless-Detachable-Cancelling/dp/B08NTYB4M7/ref=sr_1_1_sspa?crid=AMAMPFDI7BL1&keywords=HyperX+Cloud+II+Wireless+Gaming+Headset&qid=1648578492&s=electronics&sprefix=hyperx+cloud+ii+wireless+gaming+headset%2Celectronics%2C93&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFRM0xQNEhBNVRJUksmZW5jcnlwdGVkSWQ9QTA5OTgzMzQzNDlTSTkzNDU2NlNHJmVuY3J5cHRlZEFkSWQ9QTA3OTE0NjcyOFAwTVJKUjVGQlJNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==",
+
+        "category_id": 4
+    },
+    {
+        "name": "Corsair Void RGB Elite Wireless Gaming Headset",
+
+        "price": 74.99,
+
+        "image": "./Corsair-Void.jpeg",
+
+        "description": "Immerse yourself in the action with the CORSAIR VOID RGB ELITE Wireless, with custom-tuned 50mm neodymium audio drivers delivering 7.1 surround sound on PC. Microfiber mesh fabric and memory foam earpads provide lasting comfort.",
+
+        "link": "https://www.amazon.com/Corsair-Wireless-Premium-Headset-Surround/dp/B07X8SJ8HM/ref=sr_1_3?keywords=corsair+void+rgb+elite+wireless&qid=1648578759&s=electronics&sprefix=corsair+void+rgb+elite%2Celectronics%2C58&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech G432 Wired Gaming Headset",
+
+        "price": 46.99,
+
+        "image": "./Logitech-G432.jpg",
+
+        "description": "With the G432 gaming headset, be surrounded by the game environment. Get the thrill of being fully immersed in the action and always heard for a complete gaming experience.",
+
+        "link": "https://www.amazon.com/Logitech-Surround-Gaming-Headset-Leatherette/dp/B07MRMHML9/ref=sr_1_3?crid=2D7NEAW6UV0Z1&keywords=logitech+g432&qid=1648579005&s=electronics&sprefix=logitech+g432%2Celectronics%2C68&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech G PRO X Wireless Gaming Headset",
+
+        "price": 199.99,
+
+        "image": "./Logitech-GPRO.jpg",
+
+        "description": "LIGHTSPEED wireless technology, only from Logitech G, lets you game wirelessly without compromises in latency, connectivity or battery. Play in complete freedom with 20+ hours battery life and up to 15 m range using robust 2.4 GHz frequency.",
+
+        "link": "https://www.amazon.com/Logitech-Wireless-Lightspeed-Headset-Headphone/dp/B081PP4CB6/ref=sr_1_3?crid=BI62O3XF5NIZ&keywords=logitech+g+pro+x+wireless&qid=1648579213&s=electronics&sprefix=logitech+g+pro+x+wireless%2Celectronics%2C52&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Razer Barracuda X Wireless Gaming Headset",
+
+        "price": 79.99,
+
+        "image": "./Razer-Barracuda.jpeg",
+
+        "description": "Immersive home gaming, seamless on-the-go audio, the Razer Barracuda X is built for both. Designed for multi-platform gaming and mobile entertainment, this 4-in-1 USB-C wireless headset offers true versatility and freedom backed by long-lasting comfort, powerful drivers, and a crystal-clear mic.",
+
+        "link": "https://www.amazon.com/Razer-Barracuda-Wireless-Multi-Platform-Headset/dp/B096N6Q51N/ref=sr_1_3?keywords=razer+barracuda+x+wireless&qid=1648579398&s=electronics&sprefix=razer+baracuda+%2Celectronics%2C56&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech z407 Bluetooth Computer Speakers",
+
+        "price": 82.99,
+
+        "image": "./Logitech-Z407.jpg",
+
+        "description": "80 watts of power joins precise digital signal processing (DSP) to deliver immersive, lifelike sound. Hear the crisp high notes, the powerful mid and low-range, and all the bass you can handle. The wireless control dial and dual-position speakers let you control your sound and style.",
+
+        "link": "https://www.amazon.com/Logitech-Bluetooth-Computer-Subwoofer-Immersive/dp/B091FSM3R3/ref=sr_1_5?keywords=logitech+z407+bluetooth+computer+speakers&qid=1648579817&s=electronics&sprefix=logitech+z407%2Celectronics%2C68&sr=1-5",
+
+        "category_id": 6
+    },
+    {
+        "name": "Creative Labs Pebble USB Computer Speakers",
+
+        "price": 24.99,
+
+        "image": "./Creative-Pebble.jpeg",
+
+        "description": "Designed with a clean and modern look in mind, Pebble V2 follows the same form factor as Creative Pebble, and fits into any minimalists office, home, workspace, and battlestation setup.",
+
+        "link": "https://www.amazon.com/Creative-USB-Powered-Speakers-Far-Field-Radiators/dp/B0791H74NT/ref=sr_1_1_sspa?keywords=creative+pebble+v3&qid=1648580105&s=electronics&sprefix=creative+%2Celectronics%2C61&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFN0pGSTcwWTgzRSZlbmNyeXB0ZWRJZD1BMDc3MTMzMjJDN05WVjdIRkVXMSZlbmNyeXB0ZWRBZElkPUExMDM3NTE0MklPNlBSUE5aMlNKWCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+
+        "category_id": 6
+    },
+    {
+        "name": "Mackie CRX-3 Stereo Computer Monitors",
+
+        "price": 99.99,
+
+        "image": "./Mackie-CRX.jpg",
+
+        "description": "CR Series Creative Reference Multimedia Monitors offer studio-quality sound with cosmetics that compliment any desk whether you?re making music, creating content, or just relaxing to your favorite tunes.",
+
+        "link": "https://www.amazon.com/Mackie-Multimedia-Monitors-Professional-Studio-Quality/dp/B08J835J47/ref=sr_1_12?keywords=mackie+cr3x&qid=1648580386&sr=8-12",
+
+        "category_id": 6
+    },
+    {
+        "name": "Edifier R1280DB Powered Computer Speakers",
+
+        "price": 139.99,
+
+        "image": "./Edifier-R1280DB.jpg",
+
+        "description": "The R1280DB has the classic look you love with all new features of modern powered Bluetooth speakers. The clean wooden finish of the R1280DB bookshelf speakers leave a lasting impression of elegance and luxury.",
+
+        "link": "https://www.amazon.com/Edifier-R1280DB-Bluetooth-Bookshelf-Speakers/dp/B06XGG6MFV/ref=sr_1_5?crid=V5F70U6WS6Y0&keywords=Edifier%2BR1280DB&qid=1648580615&sprefix=edifier%2Br1280db%2Caps%2C46&sr=8-5&th=1",
+
+        "category_id": 6
+    },
+    {
+        "name": "Logitech Z906 5.1 Surround Sound Computer Speakers",
+
+        "price": 346.99,
+
+        "image": "./Logitech-Z906.jpg",
+
+        "description": "Hear every detail, all around you - this THX-Certified system delivers theater-quality surround sound for your movies, games and music. The Logitech Z906 Speaker system packs a lot of bang for your buck.",
+
+        "link": "https://www.amazon.com/Logitech-Surround-Sound-Speaker-System/dp/B004M18O60/ref=sr_1_3?crid=3MGKHO7056ZZ6&keywords=Logitech+Z906+5.1+Surround+Sound+Computer+Speakers&qid=1648580822&sprefix=logitech+z906+5.1+surround+sound+computer+speakers%2Caps%2C220&sr=8-3",
+
+        "category_id": 6
+        },
+        {
         "name": "Logitech c920x HD Pro Webcam",
         "price": 69.99,
         "image": "./logitech-c920x-webcam.jpg",
