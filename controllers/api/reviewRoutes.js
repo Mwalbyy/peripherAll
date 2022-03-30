@@ -2,13 +2,18 @@ const router = require('express').Router();
 const { Product, Review } = require('../../models');
 
 // get all review
-router.get('/', async (res, req) => {
+router.get('/', async (req, res) => {
     try {
-        const reviewData = await Review.findAll(req.params.id, {
-            include: [{ model: Product }]
+        const reviewData = await Review.findAll({
+            include: [{ model: Product, attributes: ['name'], }]
         });
+        
+        const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.status(200).json(reviewData);
+        // res.render('homepage', {
+        //     reviews,
+        // });
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }
@@ -16,18 +21,18 @@ router.get('/', async (res, req) => {
 
 
 //single review
-router.get('/:id', async (res, req) => {
+router.get('/:id', async (req, res) => {
     try {
         const reviewData = await Review.findByPk(req.params.id, {
             include: [{ model: Product }]
         });
 
-        if(!reviewData) {
-            res.status(404).json({ message: 'No review found with this id!' });
-            return;
-        }
+        const review = reviewData.get({ plain: true });
 
-        res.render('review');
+        // res.render('homepage', {
+        //     review,
+        // });
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }

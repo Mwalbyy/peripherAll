@@ -1,24 +1,41 @@
 const router = require('express').Router();
-const {Product} = require('../../models');
+const {Product, Review, User} = require('../../models');
 
-router.get('/', async( req, res) =>{
+router.get('/', async (req, res) => {
     try {
-        const productData = await Product.findAll()
-        const products = productData.map((product) => product.get({ plain:true}))
-        res.render('homepage', {
-            products
-        })
-    }catch (err) {
+        const productData = await Product.findAll({
+          include: [
+            { model: Review, 
+            attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'],
+            include: {
+              model: User,
+              attributes: ['user_name']
+            }
+            },
+          ],
+        });
+        const products = productData.map((product) => product.get({ plain:true }));
+        // res.render('homepage', {
+        //     products,
+        // });
+        res.status(200).json(productData)
+    } catch(err) {
         res.status(500).json(err)
     }
 });
 
-router.get('/product/:id', async (req, res) =>{
+// original one product call
+router.get('/:id', async (req, res) =>{
     try {
-        const productData = await Product.findByPk(req.params.id, {});
-        res.render('product', {
-            productData
-        })
+        const productData = await Product.findByPk(req.params.id, {
+          include: [
+            { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'] },
+          ],
+        });
+        // res.render('productpage', {
+        //     productData
+        // })
+        res.status(200).json(productData)
     } catch (err) {
         res.status(500).json(err);
     }
