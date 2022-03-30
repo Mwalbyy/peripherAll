@@ -1,7 +1,10 @@
+{{#with products as |product| }}
 <div class="product">
 <h1>{{product.name}}</h1>
-<img src="./assets/images{{product.image}}"/>
+<img src="/assets/images/{{product.image}}"/>
 <h1>{{product.description}}</h1>
 <h1>{{product.price}}</h1>
 <h1><a href="{{product.link}}"></a></h1>
+<h1>{{product.reviews}}</h1>
 </div>
+{{/with}}
