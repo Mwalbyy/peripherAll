@@ -13,6 +13,91 @@
         "category_id": 7
     },
     {
+        "name": "Samsung 49-inch Odyssey G9 Gaming Monitor",
+
+        "price": 1190,
+        
+        "image":"./samsung-odyssey-G9.jpg",
+        
+        "description": "Samsung's Largest 1000R Gaming Monitor: Get your head in the game with the 49 inch Odyssey G9, which matches the curve of the human eye, for maximum immersion and minimal eye strain, and the screen space of two 27 inch panels.",
+        
+        "link": "https://www.amazon.com/SAMSUNG-49-inch-Odyssey-FreeSync-LC49G95TSSNXZA/dp/B088HH6LW5/ref=sr_1_2?keywords=odyssey%2Bg9&qid=1648574055&sprefix=ody%2Caps%2C114&sr=8-2&th=1", 
+
+        "category_id": 1
+    },
+    {
+        "name": "ASUS VG278Q 27-inch",
+        "price": 279.99,
+        "image": "./Asus-27-inch.jpg",
+        "description": "27-inch Full HD (1920x1080) Panel 144Hz refresh rate and 1ms (GTG) response time gaming monitor and free Sync/Adaptive Sync for a tear-free experience.",
+        "link": "https://www.amazon.com/VG278Q-G-Sync-Compatible-Adaptive-Monitor/dp/B074JLD4HZ?th=1",
+        "category_id": 1
+    },
+    {
+        "name": "Sceptre 24-inch Professional Thin 75hz",
+        "price": 125.00,
+        "image": "./sceptre-24-inch.jpg",
+        "description": "24-inch Ultra slim profile. Contemporary sleek metallic design",
+        "link": "https://www.amazon.com/Sceptre-E248W-19203R-Monitor-Speakers-Metallic/dp/B0773ZY26F/ref=sr_1_4?crid=2IDDU4GUGJQBC&keywords=monitor&qid=1648574754&s=electronics&sprefix=monito%2Celectronics%2C80&sr=1-4&th=1",
+        "category_id": 1
+    },
+    {
+        "name": "“Alienware 120Hz UltraWide Gaming Monitor 34 Inch",
+        "price": 711.98,
+        "image": "./alienware-34-inch.jpg",
+        "description": "“Experience breathtaking views with a combination of immersive features",
+        "link": "https://www.amazon.com/Alienware-Curved-NVIDIA-Edgelight-Monitor/dp/B07YLGH9Q5/ref=sr_1_4?keywords=alienware+qd-oled+monitor&qid=1648575018&s=electronics&sprefix=alienware+q%2Celectronics%2C70&sr=1-4",
+        "category_id": 1
+    },
+    {
+        "name": "LG 27GN950-B Ultragear Gaming Monitor 27-inch UHD",
+        "price": 892.88,
+        "image": "./LG27GN950.jpg",
+        "description": "The LG UltraGear is the first 4K Nano IPS 1ms gaming monitor that'll properly show off your superpowered GPU. This 4K 27-inch HDR monitor has a 144Hz refresh rate and 1ms response time, which is kind of wild for a 4K monitor. What is most impressive, however, is the Nano IPS tech that offers a wider color gamut and stellar viewing angles.",
+        "link": "",
+        "category_id": 1
+    },
+    {
+        "name": "The Shogun The Mousepad Company DuraGlyde",
+        "price": 59.99,
+        "image": "./shogun-mousepad.jpg",
+        "description": "Samurai fighting a water dragon",
+        "link": "https://www.amazon.com/Shogun-Mousepad-Company-DuraGlyde-x18/dp/B09D4V5NC3/ref=sr_1_2?crid=O2PL33W246OH&keywords=the%2Bmousepad%2Bcompany&qid=1648577057&sprefix=the%2Bmousepad%2Bcompany%2Caps%2C87&sr=8-2&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Razer Goliathus Extended Chroma Gaming Mousepad",
+        "price": 39.99,
+        "image": "./razer-chroma-mousepad.jpg",
+        "description": "Razer mousepad with RGB lights around the perimeter",
+        "link": "https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_5?keywords=razer%2Bmouse%2Bpad&qid=1648577581&sprefix=razor%2Bmouse%2Caps%2C86&sr=8-5&th=1",
+        "category_id": 3
+    },
+    {
+        "name": "Mouse Pad Wrist Support Keyboard Wrist Rest",
+        "price": 8.98,
+        "image": "./ergo-mousepad.jpg",
+        "description": "Ergonomic mousepad with map of the Americas",
+        "link": "https://www.amazon.com/Gaming-Support-iKammo-Memory-Working/dp/B07PZ2YC9P/ref=sr_1_11?crid=1YF4LC732PRDO&keywords=ergo+mouse+pad&qid=1648578288&sprefix=ergo+mouse+pad%2Caps%2C78&sr=8-11",
+        "category_id": 3
+    },
+    {
+        "name": "Nets Basketball Large Rectangular Mousepad",
+        "price": 9.94,
+        "image": "./brooklyn-nets-mousepad.jpg",
+        "description": "Support the Brooklyn Nets with this mousepad!",
+        "link": "",
+        "category_id": 3
+    },
+    {
+        "name": "Iron Man Mousepad",
+        "price": 9.99,
+        "image": "./iron-man-mousepad.jpg",
+        "description": "Iron man and arc reactor graphic mousepad",
+        "link": "https://www.amazon.com/Non-Slip-Mousepad-Computer-Accessories-Supplies/dp/B08X6RH1JB/ref=sr_1_5?crid=20MX7TDWDOVB2&keywords=iron+man+mouse+pad&qid=1648578906&sprefix=iron+man+mouse+pad%2Caps%2C67&sr=8-5",
+        "category_id": 3
+    },
+    {
         "name": "Logitech G502 Lightspeed Wireless",
 
         "price": 149.99,
@@ -37,8 +122,6 @@
         "link": "https://www.amazon.com/Razer-Ultimate-Lightest-Wireless-Gaming/dp/B08565C5BB/ref=sr_1_2?crid=39295SD5IUG1X&keywords=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse&qid=1648568372&s=books&sprefix=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse%2Cstripbooks%2C44&sr=1-2-catcorr&th=1",
 
         "category_id": 7
-
-
     },
     {
         "name": "Logitech MX Master 3",
@@ -51,7 +134,6 @@
 
         "link": "https://www.amazon.com/Logitech-Master-Advanced-Wireless-Mouse/dp/B07S395RWD/ref=sr_1_1?crid=2M6RC04FSSUXO&keywords=logitech+mx+master+3&qid=1648568640&s=books&sprefix=logitech+mx+master+3%2Cstripbooks%2C48&sr=1-1",
 
-        
         "category_id": 7
     },
     {
@@ -64,7 +146,6 @@
         "description": "With 20 buttons, the Logitech G600 MMO Gaming Mouse is the most customizable and easy-to-use mouse specifically designed for mastering your favorite MMOs",
 
         "link": "https://www.amazon.com/Logitech-Gaming-Backlit-Programmable-Buttons/dp/B0086UK7IQ/ref=sr_1_1?crid=27RD1NH7HRBM&keywords=logitech+g600&qid=1648568990&s=books&sprefix=logitech+g600%2Cstripbooks%2C69&sr=1-1",
-
         
         "category_id": 7
     },
@@ -132,5 +213,177 @@
         "link": "https://www.amazon.com/Macally-Multisync-Wireless-Bluetooth-Smartphones/dp/B07GT6WBL3/ref=sr_1_3?crid=25E79ZDGULHG1&keywords=macally+mini+usb+c+keyboard&qid=1648574154&s=electronics&sprefix=macalley+mini+usb+c+keyboard%2Celectronics%2C63&sr=1-3",
 
         "category_id": 2
+    },
+    {
+        "name": "HyperX Cloud II Wireless Gaming Headset",
+
+        "price": 129.99,
+
+        "image": "./Hyperx-Cloud2.jpg",
+
+        "description": "The HyperX Cloud II was built to be an ultra-comfortable gaming headset. As millions continue to utilize it as their preferred gaming headset, we proudly present the HyperX Cloud II Wireless.",
+
+        "link": "https://www.amazon.com/HyperX-Cloud-Wireless-Detachable-Cancelling/dp/B08NTYB4M7/ref=sr_1_1_sspa?crid=AMAMPFDI7BL1&keywords=HyperX+Cloud+II+Wireless+Gaming+Headset&qid=1648578492&s=electronics&sprefix=hyperx+cloud+ii+wireless+gaming+headset%2Celectronics%2C93&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFRM0xQNEhBNVRJUksmZW5jcnlwdGVkSWQ9QTA5OTgzMzQzNDlTSTkzNDU2NlNHJmVuY3J5cHRlZEFkSWQ9QTA3OTE0NjcyOFAwTVJKUjVGQlJNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==",
+
+        "category_id": 4
+    },
+    {
+        "name": "Corsair Void RGB Elite Wireless Gaming Headset",
+
+        "price": 74.99,
+
+        "image": "./Corsair-Void.jpeg",
+
+        "description": "Immerse yourself in the action with the CORSAIR VOID RGB ELITE Wireless, with custom-tuned 50mm neodymium audio drivers delivering 7.1 surround sound on PC. Microfiber mesh fabric and memory foam earpads provide lasting comfort.",
+
+        "link": "https://www.amazon.com/Corsair-Wireless-Premium-Headset-Surround/dp/B07X8SJ8HM/ref=sr_1_3?keywords=corsair+void+rgb+elite+wireless&qid=1648578759&s=electronics&sprefix=corsair+void+rgb+elite%2Celectronics%2C58&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech G432 Wired Gaming Headset",
+
+        "price": 46.99,
+
+        "image": "./Logitech-G432.jpg",
+
+        "description": "With the G432 gaming headset, be surrounded by the game environment. Get the thrill of being fully immersed in the action and always heard for a complete gaming experience.",
+
+        "link": "https://www.amazon.com/Logitech-Surround-Gaming-Headset-Leatherette/dp/B07MRMHML9/ref=sr_1_3?crid=2D7NEAW6UV0Z1&keywords=logitech+g432&qid=1648579005&s=electronics&sprefix=logitech+g432%2Celectronics%2C68&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech G PRO X Wireless Gaming Headset",
+
+        "price": 199.99,
+
+        "image": "./Logitech-GPRO.jpg",
+
+        "description": "LIGHTSPEED wireless technology, only from Logitech G, lets you game wirelessly without compromises in latency, connectivity or battery. Play in complete freedom with 20+ hours battery life and up to 15 m range using robust 2.4 GHz frequency.",
+
+        "link": "https://www.amazon.com/Logitech-Wireless-Lightspeed-Headset-Headphone/dp/B081PP4CB6/ref=sr_1_3?crid=BI62O3XF5NIZ&keywords=logitech+g+pro+x+wireless&qid=1648579213&s=electronics&sprefix=logitech+g+pro+x+wireless%2Celectronics%2C52&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Razer Barracuda X Wireless Gaming Headset",
+
+        "price": 79.99,
+
+        "image": "./Razer-Barracuda.jpeg",
+
+        "description": "Immersive home gaming, seamless on-the-go audio, the Razer Barracuda X is built for both. Designed for multi-platform gaming and mobile entertainment, this 4-in-1 USB-C wireless headset offers true versatility and freedom backed by long-lasting comfort, powerful drivers, and a crystal-clear mic.",
+
+        "link": "https://www.amazon.com/Razer-Barracuda-Wireless-Multi-Platform-Headset/dp/B096N6Q51N/ref=sr_1_3?keywords=razer+barracuda+x+wireless&qid=1648579398&s=electronics&sprefix=razer+baracuda+%2Celectronics%2C56&sr=1-3",
+
+        "category_id": 4
+    },
+    {
+        "name": "Logitech z407 Bluetooth Computer Speakers",
+
+        "price": 82.99,
+
+        "image": "./Logitech-Z407.jpg",
+
+        "description": "80 watts of power joins precise digital signal processing (DSP) to deliver immersive, lifelike sound. Hear the crisp high notes, the powerful mid and low-range, and all the bass you can handle. The wireless control dial and dual-position speakers let you control your sound and style.",
+
+        "link": "https://www.amazon.com/Logitech-Bluetooth-Computer-Subwoofer-Immersive/dp/B091FSM3R3/ref=sr_1_5?keywords=logitech+z407+bluetooth+computer+speakers&qid=1648579817&s=electronics&sprefix=logitech+z407%2Celectronics%2C68&sr=1-5",
+
+        "category_id": 6
+    },
+    {
+        "name": "Creative Labs Pebble USB Computer Speakers",
+
+        "price": 24.99,
+
+        "image": "./Creative-Pebble.jpeg",
+
+        "description": "Designed with a clean and modern look in mind, Pebble V2 follows the same form factor as Creative Pebble, and fits into any minimalists office, home, workspace, and battlestation setup.",
+
+        "link": "https://www.amazon.com/Creative-USB-Powered-Speakers-Far-Field-Radiators/dp/B0791H74NT/ref=sr_1_1_sspa?keywords=creative+pebble+v3&qid=1648580105&s=electronics&sprefix=creative+%2Celectronics%2C61&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFN0pGSTcwWTgzRSZlbmNyeXB0ZWRJZD1BMDc3MTMzMjJDN05WVjdIRkVXMSZlbmNyeXB0ZWRBZElkPUExMDM3NTE0MklPNlBSUE5aMlNKWCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+
+        "category_id": 6
+    },
+    {
+        "name": "Mackie CRX-3 Stereo Computer Monitors",
+
+        "price": 99.99,
+
+        "image": "./Mackie-CRX.jpg",
+
+        "description": "CR Series Creative Reference Multimedia Monitors offer studio-quality sound with cosmetics that compliment any desk whether you?re making music, creating content, or just relaxing to your favorite tunes.",
+
+        "link": "https://www.amazon.com/Mackie-Multimedia-Monitors-Professional-Studio-Quality/dp/B08J835J47/ref=sr_1_12?keywords=mackie+cr3x&qid=1648580386&sr=8-12",
+
+        "category_id": 6
+    },
+    {
+        "name": "Edifier R1280DB Powered Computer Speakers",
+
+        "price": 139.99,
+
+        "image": "./Edifier-R1280DB.jpg",
+
+        "description": "The R1280DB has the classic look you love with all new features of modern powered Bluetooth speakers. The clean wooden finish of the R1280DB bookshelf speakers leave a lasting impression of elegance and luxury.",
+
+        "link": "https://www.amazon.com/Edifier-R1280DB-Bluetooth-Bookshelf-Speakers/dp/B06XGG6MFV/ref=sr_1_5?crid=V5F70U6WS6Y0&keywords=Edifier%2BR1280DB&qid=1648580615&sprefix=edifier%2Br1280db%2Caps%2C46&sr=8-5&th=1",
+
+        "category_id": 6
+    },
+    {
+        "name": "Logitech Z906 5.1 Surround Sound Computer Speakers",
+
+        "price": 346.99,
+
+        "image": "./Logitech-Z906.jpg",
+
+        "description": "Hear every detail, all around you - this THX-Certified system delivers theater-quality surround sound for your movies, games and music. The Logitech Z906 Speaker system packs a lot of bang for your buck.",
+
+        "link": "https://www.amazon.com/Logitech-Surround-Sound-Speaker-System/dp/B004M18O60/ref=sr_1_3?crid=3MGKHO7056ZZ6&keywords=Logitech+Z906+5.1+Surround+Sound+Computer+Speakers&qid=1648580822&sprefix=logitech+z906+5.1+surround+sound+computer+speakers%2Caps%2C220&sr=8-3",
+
+        "category_id": 6
+        },
+        {
+        "name": "Logitech c920x HD Pro Webcam",
+        "price": 69.99,
+        "image": "./logitech-c920x-webcam.jpg",
+        "description": "Full HD 1080p video calling and recording at 30 fps - You will make a strong impression when it counts with crisp, clearly detailed and vibrantly colored video.",
+        "link": "https://www.amazon.com/Logitech-C920x-Pro-HD-Webcam/dp/B085TFF7M1/ref=sr_1_3?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648579843&sprefix=webcam%2Caps%2C85&sr=8-3&th=1",
+        "category_id": 5
+    },
+    {
+        "name": "NexiGo N60 1080P Web Camera",
+        "price": 39.99,
+        "image": "./nexigo-webcam.jpg",
+        "description": "Powered by a 1080p FHD two-MP CMOS, the NexiGo N60 Webcam produces exceptionally sharp and clear videos at resolutions up to 1920 x 1080 with 30fps. The 3.6mm glass lens provides a crisp image at fixed distances and is optimized between 19.6 inches to 13 feet, making it ideal for almost any indoor use.",
+        "link": "“https://www.amazon.com/Microphone-NexiGo-Computer-110-degree-Conferencing/dp/B088TSR6YJ/ref=sr_1_4?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-4",
+        "category_id": 5
+    },
+    {
+        "name": "Logitech C270 HD Webcam",
+        "price": 17.99,
+        "image": "./logitech-c270-webcam.jpg",
+        "description": "HD 720p video calling and HD video recording, 2.4 GigaHertz Intel Core2 Duo, 2 GB RAM,200 MB hard drive space",
+        "link": "https://www.amazon.com/Logitech-Desktop-Widescreen-Calling-Recording/dp/B004FHO5Y6/ref=sr_1_8?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-8",
+        "category_id": 5
+    },
+    {
+        "name": "Logitech Brio 4k Webcam Ultra 4K HD",
+        "price": 165.10,
+        "image": "./logitech-brio-webcam.jpg",
+        "description": "Ultra 4K HD resolution: 4 times the resolution of a typical HD webcam; look your best and enjoy professional video experience wherever you are with 5x HD zoom.",
+        "link": "https://www.amazon.com/Logitech-Calling-Noise-Canceling-Correction-Microsoft/dp/B01N5UOYC4/ref=sr_1_9?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-9&th=1",
+        "category_id": 5
+    },
+    {
+        "name": "HOBFU 1080P Webcam with Microphone",
+        "price": 8.99,
+        "image": "./hobfu-webcam.jpg",
+        "description": "Streaming IP webcam operates in 1080p video at 30-fps, whether you're on Skype or streaming yourself gaming delivers crystal clear images. Face enhancement technology automatically optimizes the image so you look more beautiful in the video.",
+        "link": "https://www.amazon.com/Webcam-Microphone-Desktop-Facial-Enhancement-Technology/dp/B08JLQGTKZ/ref=sr_1_16?crid=30HP3UK4ITEXC&keywords=webcam&qid=1648580032&sprefix=webcam%2Caps%2C85&sr=8-16&th=1",
+        "category_id": 5
     }
+
 ]
+
