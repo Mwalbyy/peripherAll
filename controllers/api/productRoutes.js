@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
             attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'],
             include: {
               model: User,
-              attributes: ['user_name']
+              attributes: ['user_name'],
             }
             },
           ],
