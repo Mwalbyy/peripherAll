@@ -1,13 +1,13 @@
 <div class="navbar">
     <div class="logo">
-        <a href="main.handlebars">LOGO</a>
+        <a href="">LOGO</a>
     </div>
     <div class="navLeft">
-        <button class="dropDownBtn" href="#">
+        <button onclick="dropDown()" class="dropDownBtn">
             categories
-            <i class="fa-solid fa-caret-right fa-xs"></i>
+            <i id="caret-drop" class="fa-solid fa-grip-lines "></i>
         </button>
-        <div class="dropDown">
+        <div id="dropDownId" class="dropDown">
             {{#each categories as |category|}}
             <a href="">{{{category.name}}}</a>
             {{/each}}
