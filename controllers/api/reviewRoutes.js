@@ -5,13 +5,13 @@ const { Product, Review } = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const reviewData = await Review.findAll({
-            include: [{ model: Product }]
+            include: [{ model: Product, attributes: ['name'], }]
         });
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
         res.render('homepage', {
-            reviews
+            reviews,
         });
     } catch(err) {
         res.status(500).json(err);
@@ -26,12 +26,11 @@ router.get('/:id', async (req, res) => {
             include: [{ model: Product }]
         });
 
-        if(!reviewData) {
-            res.status(404).json({ message: 'No review found with this id!' });
-            return;
-        }
+        const review = reviewData.get({ plain: true });
 
-        res.render('review');
+        res.render('homepage', {
+            review,
+        });
     } catch(err) {
         res.status(500).json(err);
     }
