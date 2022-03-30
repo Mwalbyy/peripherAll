@@ -1,5 +1,18 @@
 <div class="categories">
-    
-    <h1>this is a test to see that this is working fine</h1>
+    {{#each category as |category|}}
+    <div>
+        <h1>{{category.name}}</h1>
+        
+    {{#each category.product as |category.product|}}
+        <ul>
+            <li <a href="{{"./samsung-odyssey-G9.jpg"}}"></a>>{{product.name}}</li>
+            <li <a href="{{"./Asus-27-inch.jpg"}}"></a>>{{product.name}}</li>
+            <li <a href="{{"./sceptre-24-inch.jpg"}}"></a>>{{product.name}}</li>
+            <li <a href="{{"./alienware-34-inch.jpg"}}"></a>>{{product.name}}</li>
+            <li <a href="{{"./LG27GN950.jpg"}}"></a>>{{product.name}}</li>
+        </ul>
+    {{/each}}
+    </div>
+    {{/each}}
 
 </div>
