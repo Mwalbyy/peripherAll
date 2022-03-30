@@ -19,6 +19,9 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+.login-btn{
+background-color: var(--navHover);
+}
 
 
 .navLeft {
@@ -84,7 +87,11 @@ a {
   font-size: 18px;
   color: var(--navText);
 }
-/* animation for  */
+.dropDownLogin {
+  margin-top: 10px;
+  background-color:var(--navHover);
+  display: none;
+}
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
@@ -101,8 +108,4 @@ a {
       transform: scaleY(1)
   }
 }
-/* Login */
-.dropDownLogin {
-  margin-top: 10px;
-  background-color:var(--navHover);
-}
+

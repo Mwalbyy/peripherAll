@@ -21,10 +21,10 @@
             <i class="fa-solid fa-bookmark fa-xs"></i>
         </a>
 
-        <button class="btn spaced" href="">login
+        <button onClick="loginDrop()" class="btn spaced" href="">login
             <i class="fa-solid fa-door-open fa-xs"></i>
         </button>
-        <div class="dropDownLogin">
+        <div id="dropDownLoginId" class="dropDownLogin">
             <form class="">
                 <div class="search">
                     <label for="email-login">email:</label>
@@ -35,10 +35,12 @@
                     <input class="search" type="password" placeholder="password..." id="password-login" />
                 </div>
                 <div class="">
-                    <button class="btn" type="submit">login</button>
+                    <button class="login-btn btn" type="submit">login</button>
+                </div>
+                <div class="">
+                    <button class="login-btn btn" type="button">Create an account</button>
                 </div>
             </form>
         </div>
-
     </div>
 </div>
