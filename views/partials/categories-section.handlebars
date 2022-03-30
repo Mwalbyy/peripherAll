@@ -1,4 +1,13 @@
 <div class="categories">
-    
+    {{#each categories as |category|}}
+    <div>
+        <h1>{{category.name}}</h1>
+        {{#each category.products as |product|}}
+        
+        <h2>{{product.name}}</h2>
+
+        {{/each}}
+    </div>
+    {{/each}}
 
 </div>
