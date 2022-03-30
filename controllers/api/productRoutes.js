@@ -4,11 +4,10 @@ const {Product, Review} = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const productData = await Product.findAll({
-            // attributes: ['id', 'name', 'price', 'image', 'category_id', 'description', 'link'],
-            include: [
-                { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'], 
-                include: { model: User, attributes: ['user_name'] }, },
-            ],
+            // include: [
+            //     { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'], 
+            //     include: { model: User, attributes: ['user_name'] }, },
+            // ],
         });
         const products = productData.map((product) => product.get({ plain:true }));
         // res.render('homepage', {
