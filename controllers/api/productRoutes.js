@@ -1,24 +1,33 @@
 const router = require('express').Router();
-const {Product} = require('../../models');
+const {Product, Review} = require('../../models');
 
-router.get('/', async( req, res) =>{
+router.get('/', async (req, res) => {
     try {
-        const productData = await Product.findAll()
-        const products = productData.map((product) => product.get({ plain:true}))
-        res.render('homepage', {
-            products
-        })
-    }catch (err) {
+        const productData = await Product.findAll({
+            // attributes: ['id', 'name', 'price', 'image', 'category_id', 'description', 'link'],
+            include: [
+                { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'], 
+                include: { model: User, attributes: ['user_name'] }, },
+            ],
+        });
+        const products = productData.map((product) => product.get({ plain:true }));
+        // res.render('homepage', {
+        //     products,
+        // });
+        res.status(200).json(productData)
+    } catch(err) {
         res.status(500).json(err)
     }
 });
 
+// original one product call
 router.get('/:id', async (req, res) =>{
     try {
         const productData = await Product.findByPk(req.params.id, {});
-        res.render('homepage', {
-            productData
-        })
+        // res.render('productpage', {
+        //     productData
+        // })
+        res.status(200).json(productData)
     } catch (err) {
         res.status(500).json(err);
     }

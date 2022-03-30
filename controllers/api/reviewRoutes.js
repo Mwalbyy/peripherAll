@@ -10,9 +10,10 @@ router.get('/', async (req, res) => {
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.render('homepage', {
-            reviews,
-        });
+        // res.render('homepage', {
+        //     reviews,
+        // });
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }
@@ -28,9 +29,10 @@ router.get('/:id', async (req, res) => {
 
         const review = reviewData.get({ plain: true });
 
-        res.render('homepage', {
-            review,
-        });
+        // res.render('homepage', {
+        //     review,
+        // });
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }
