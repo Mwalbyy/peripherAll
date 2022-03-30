@@ -32,13 +32,16 @@ router.get('/:id', async (req, res) =>{
             { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'] },
           ],
         });
-        // res.render('productpage', {
-        //     productData
-        // })
-        res.status(200).json(productData)
+        const products = productData.get({ plain:true });
+        console.log(products);
+        res.render('productpage', {
+            products
+        })
+
     } catch (err) {
         res.status(500).json(err);
     }
 });
+
 
 module.exports = router;
