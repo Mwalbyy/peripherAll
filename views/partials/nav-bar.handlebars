@@ -3,7 +3,7 @@
         <a href="">LOGO</a>
     </div>
     <div class="navLeft">
-        <button onclick="dropDown()" class="dropDownBtn">
+        <button onclick="dropDown()" class="dropDownBtn btn">
             categories
             <i id="caret-drop" class="fa-solid fa-grip-lines "></i>
         </button>
@@ -20,8 +20,27 @@
         <a class="spaced" href="#">Bookmarks
             <i class="fa-solid fa-bookmark fa-xs"></i>
         </a>
-        <a class="spaced" href="#">login
+
+        <button onClick="loginDrop()" class="btn spaced" href="">login
             <i class="fa-solid fa-door-open fa-xs"></i>
-        </a>
+        </button>
+        <div id="dropDownLoginId" class="dropDownLogin">
+            <form class="">
+                <div class="search">
+                    <label for="email-login">email:</label>
+                    <input class="search" type="text" placeholder="example@mail.com" id="email-login" />
+                </div>
+                <div class="search">
+                    <label for="password-login">password:</label>
+                    <input class="search" type="password" placeholder="password..." id="password-login" />
+                </div>
+                <div class="">
+                    <button class="login-btn btn" type="submit">login</button>
+                </div>
+                <div class="">
+                    <button class="login-btn btn" type="button">Create an account</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
