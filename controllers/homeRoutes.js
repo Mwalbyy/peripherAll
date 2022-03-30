@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
     const categories = categoryData.map((category) =>
       category.get({ plain: true })
       );
-      console.log(categories[1].products)
+      // console.log(categories[0].products)
     res.render("homepage", {
       categories,
       logged_in: req.session.logged_in,
