@@ -10,10 +10,9 @@ router.get('/', async (req, res) => {
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        // res.render('homepage', {
-        //     reviews,
-        // });
-        res.status(200).json(reviewData)
+        res.render('reviewpage', {
+            reviews,
+        });
     } catch(err) {
         res.status(500).json(err);
     }
@@ -24,15 +23,14 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const reviewData = await Review.findByPk(req.params.id, {
-            include: [{ model: Product }]
+            include: [{ model: Product, attributes: ['name'], }]
         });
 
-        const review = reviewData.get({ plain: true });
+        const reviews = reviewData.get({ plain: true });
 
-        // res.render('homepage', {
-        //     review,
-        // });
-        res.status(200).json(reviewData)
+        res.render('reviewpage', {
+            reviews,
+        });
     } catch(err) {
         res.status(500).json(err);
     }
