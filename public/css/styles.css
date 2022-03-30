@@ -11,7 +11,7 @@ body {
   background-color: grey;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.dropDownBtn {
+.btn{
   border: none;
   outline: none;
   color: var(--navText);
@@ -19,6 +19,8 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 .navLeft {
   float: left;
   overflow: hidden;
@@ -48,7 +50,8 @@ a {
   color: var(--navText);
 }
 .spaced {
-  margin: 15px;
+  margin:0 5px 0 15px ;
+
 }
 .dropDown {
   margin-top: 13px;
@@ -71,33 +74,17 @@ a {
     background-color: var(--headerBg);
     transition: .1s ;
 }
-/* .navLeft:hover .dropDown{
-  display: block;
-  animation: growDown 150ms ease-in-out forwards;
-  transform-origin: top center
-}
-@keyframes growDown {
-  0% {
-      transform: scaleY(0)
-  }
-  80% {
-      transform: scaleY(1.1)
-  }
-  100% {
-      transform: scaleY(1)
-  }
-} */
-
 .caretRotate{
     transform: rotate(90deg);
     transition: transform .1s;
 }
 .search{
-  padding: 6px;
+  padding: 5px;
   border: none;
-  margin-top: 0px;
-  font-size: 17px;
+  font-size: 18px;
+  color: var(--navText);
 }
+/* animation for  */
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
@@ -108,9 +95,14 @@ a {
       transform: scaleY(0)
   }
   80% {
-      transform: scaleY(1.1)
+      transform: scaleY(1)
   }
   100% {
       transform: scaleY(1)
   }
+}
+/* Login */
+.dropDownLogin {
+  margin-top: 10px;
+  background-color:var(--navHover);
 }
