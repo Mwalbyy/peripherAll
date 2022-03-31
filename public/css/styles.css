@@ -117,8 +117,6 @@ img {
   display: flex;
   margin-top:40px ;
 }
-
-
 .productImage {
   display: block;
   margin-left: auto;
@@ -156,5 +154,8 @@ text-decoration: underline;
 }
 
 .productReviews {
-
+color: black;
+}
+.productCard{
+  color: black;
 }

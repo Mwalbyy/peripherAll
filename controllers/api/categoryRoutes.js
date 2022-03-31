@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category } = require('../../models');
+const { Category, Product } = require('../../models');
 // /-route to get all categories
 // /category/:id-route to get category and all its products
 
@@ -12,5 +12,6 @@ router.get('/', async (req, res) => {
         res.status(400).json(err);
       }
 });
+
 
 module.exports = router;
