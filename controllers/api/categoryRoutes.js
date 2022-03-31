@@ -12,6 +12,23 @@ router.get('/', async (req, res) => {
         res.status(400).json(err);
       }
 });
+router.get("/:id", async (req, res) => {
+  try {
+    const categoryData = await Category.findByPk(req.params.id, {
+      include: [
+        {
+          model: Product,
+          attributes: ['id', 'name', 'image'],
+        },
+      ],
+    });
 
-
+    const categories = categoryData.get({ plain: true });
+    res.render("homepage", {
+      categories
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;

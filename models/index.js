@@ -27,4 +27,8 @@ Review.belongsTo(Product, {
     foreignKey: 'product_id',
 });
 
+Review.belongsTo(Product, {
+    foreignKey: 'product_name',
+});
+
 module.exports = {User, Product, Category, Review};
