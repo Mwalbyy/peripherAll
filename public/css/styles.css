@@ -117,6 +117,8 @@ img {
   display: flex;
   margin-top:40px ;
 }
+
+
 .productImage {
   display: block;
   margin-left: auto;
@@ -151,11 +153,9 @@ padding-bottom: 15px;
 .productLink {
 text-align: center;
 text-decoration: underline;
+--navText: rgb(23, 114, 23);
 }
 
 .productReviews {
-color: black;
-}
-.productCard{
-  color: black;
+
 }
