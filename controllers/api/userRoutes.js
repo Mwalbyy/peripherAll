@@ -3,25 +3,28 @@ const { User } = require('../../models');
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 
-router.post('/userSignup', async (req, res) => {
+router.post('/signup', async (req, res) => {
 try {
 
-    const {userFromSignUp,emailFromSignUp, passwordFromSignUp} = req.body;
+    const {name, email, password} = req.body;
     
     const newUser = await User.create({
-        userName: userFromSignUp,
-        email: emailFromSignUp,
-        Password: bcrypt.hashSync(passwordFromSignUp, bcrypt.genSaltSync()),
+      
+      user_name: name,
+      email: email,
+      password: password
     });
+    console.log(newUser)
     res.json(newUser);
+    
 } catch (err) {
     res.status(400).json(err);
   }
-    
 });
+
 router.post('/login', async (req, res) => {
     try {
-        const {userFromSignUp, passwordFromSignUp} = req.body;
+        const {email, password} = req.body;
 
         // find a user from the DB
         const existingUser = await User.findOne({ user_name: userFromSignUp});
