@@ -1,10 +1,12 @@
 <div class="categories">
     {{#each categories as |category|}}
     <div class="categoryDisplay">
-        <h1>{{category.name}}</h1>
+        <h1 class="categoryName">{{category.name}}</h1>
         {{#each category.products as |product|}}
-        <img src="/assets/images/{{product.image}}">
-        <h2 class="productName">{{product.name}}</h2>
+        <div class="productCard">
+            <img src="/assets/images/{{product.image}}">
+            <h2 class="productName">{{product.name}}</h2>
+        </div>
         {{/each}}
     </div>
     {{/each}}

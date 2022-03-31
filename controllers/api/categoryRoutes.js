@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
         res.status(400).json(err);
       }
 });
-
 router.get("/:id", async (req, res) => {
   try {
     const categoryData = await Category.findByPk(req.params.id, {
@@ -32,5 +31,4 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 module.exports = router;
