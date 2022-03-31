@@ -1,14 +1,16 @@
 async function submitFormHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name = "review-title"]').value.trim();
-    const description = document.querySelector('input[name = "review-description"]').value.trim();
+    const text = document.querySelector('#review-entry').value.trim();
+
 
     const response = await fetch("/api/review", {
-        method: "Post",
+        method: "POST",
         body: JSON.stringify({
-            title,
-            description,
+            text,
+            user_id:1,
+            stars:4,
+            product_id:1,
         }),
         headers: {
             "Content-Type": 'application/json',
@@ -16,7 +18,7 @@ async function submitFormHandler(event) {
     });
 
     if (response.ok) {
-        document.location.replace('/review');
+        document.location.replace('/api/product/1');
     } else {
         alert(response.statusText);
     }

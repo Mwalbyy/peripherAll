@@ -1,1 +1,13 @@
-{{> review}}
+<link rel="stylesheet" href="../public/css/starReview.css">
+
+{{#with reviews as |review|}}
+<div class="text-center">
+  <h1>Product: {{product.name}}</h1>
+  <p>User: {{user.user_name}}</p>
+  <p>Rating: {{stars}}</p>
+  <p>Review: {{review.text}}</p>
+  <p>Submitted: {{date_created}}</p>
+</div>
+{{/with}}
+
+<script src="../public/js/starReview.js"></script>
