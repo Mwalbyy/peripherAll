@@ -132,14 +132,16 @@ img {
 .productName {
   text-align: center;
   text-decoration: underline;
+  font-size: 40px;
 }
 
 .productDescription {
  padding-top: 20px;
  padding-bottom: 20px;
   text-align: center;
- font-size: large;
+ font-size: 12px;
  margin: 0 200px 0 200px;
+
  
 }
 

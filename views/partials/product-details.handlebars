@@ -3,11 +3,14 @@
         <img class="productImage" src="/assets/images/{{product.image}}" />
         <h1 class="productName">{{product.name}}</h1>
         <div class="productDescription">
-            <h1 >Description:
-                {{product.description}}</h1>
+            <h1> {{product.description}}</h1>
         </div>
-        <h1 class="productPrice">Price: ${{product.price}}.00</h1>
-        <h1 class="productLink"><a href="{{product.link}}">Buy Here!</a></h1>
+        <div class="productPrice">
+            <h1> Price: ${{product.price}}.00</h1>
+        </div>
+        <div class="productLink">
+            <h1><a href="{{product.link}}">Buy Here!</a></h1>
+        </div>
         <h1 class="productReviews">{{product.reviews}}</h1>
     </div>
 {{/with}}
