@@ -3,7 +3,7 @@
     <div class="categoryDisplay">
         <h1>{{category.name}}</h1>
         {{#each category.products as |product|}}
-        <img src="/assets/images/{{product.image}}">
+        <a href="api/product/{{product.id}}"> <img src="/assets/images/{{product.image}}"></a>
         <h2 class="productName">{{product.name}}</h2>
         {{/each}}
     </div>
