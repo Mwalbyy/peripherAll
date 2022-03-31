@@ -11,12 +11,14 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/logged-in");
+      document.location.replace("/logged");
     } else {
       alert(response.statusText);
     }
   }
 };
+
+document.querySelector('.signInForm').addEventListener('submit', loginFormHandler);
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
@@ -40,4 +42,6 @@ const signupFormHandler = async (event) => {
     }
   }
 };
-document.querySelector('.signUpForm').addEventListener('submit', signupFormHandler)
+
+document.querySelector('.signUpForm').addEventListener('submit', signupFormHandler);
+
