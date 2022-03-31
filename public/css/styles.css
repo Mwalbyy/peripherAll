@@ -6,6 +6,7 @@
   --navText: #ebebeb;
   --headerBg: #2e2e2e;
   --navHover: #1f1f1f;
+  --black: black;
 }
 body {
   background-color: grey;
@@ -118,7 +119,9 @@ img {
   margin-top:40px ;
 }
 
-
+.product {
+background-color: var();
+}
 .productImage {
   display: block;
   margin-left: auto;
@@ -128,6 +131,9 @@ img {
   margin-bottom: 20px;
   margin-top: 40px;
   border: 5px solid black;
+  box-shadow: 10px 10px 10px var(--navHover);
+  
+  
 }
 
 .productName {
@@ -144,7 +150,6 @@ img {
  font-size: 12px;
  margin: 0 200px 0 200px;
  border: 3px solid black;
-
  
 }
 
