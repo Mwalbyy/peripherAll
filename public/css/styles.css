@@ -108,4 +108,12 @@ a {
       transform: scaleY(1)
   }
 }
-
+/* styling for categories and products */
+img {
+  height: 60px;
+  width: auto;
+}
+.categoryDisplay{
+  display: flex;
+  margin-top:40px ;
+}

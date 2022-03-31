@@ -1,11 +1,10 @@
 <div class="categories">
     {{#each categories as |category|}}
-    <div>
+    <div class="categoryDisplay">
         <h1>{{category.name}}</h1>
         {{#each category.products as |product|}}
         <img src="/assets/images/{{product.image}}">
-        {{!-- <img src="/assets/images/monitors/samsung-odyssey-G9.jpg"> --}}
-        <h2>{{product.name}}</h2>
+        <h2 class="productName">{{product.name}}</h2>
         {{/each}}
     </div>
     {{/each}}
