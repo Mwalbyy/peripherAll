@@ -178,6 +178,29 @@ img {
   font-size: 50px;
   border-bottom: solid var(--orange);
 }
+.productCard{
+  color: black;
+}
+
+.signup{
+  text-align: center;
+  font-size: 30px;
+}
+
+.signUpHeader{
+  font-size: 60px;
+}
+
+.signUpForm{
+  margin: 20px 0 20px 0;
+}
+
+.form-group{
+  margin: 10px 0 10px 0;
+}
+.password{
+  margin: 10px 50px 10px 0;
+=======
 
 .categoryDisplay {
   display: flex;
