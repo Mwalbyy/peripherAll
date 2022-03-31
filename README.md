@@ -1,7 +1,7 @@
 <h1><a href="">OUR TITLE HERE</a></h1>
 
 # Creators:
-<h1><a href="https://github.com/Mwalbyy">Marcus</a>, <a href="https://github.com/SamiF812">Sami</a>, <a href="https://github.com/danchanyyoungkim">Dan</a>, and <a href="https://github.com/dyl-17">Dylan</a>
+<h1><a href="https://github.com/Mwalbyy">Marcus</a>, <a href="https://github.com/SamiF812">Sami</a>, <a href="https://github.com/danchanyyoungkim">Dan</a>, and <a href="https://github.com/dyl-17">Dylan</a></h1>
 
 ## Description
 
@@ -25,3 +25,5 @@ A user can search computer peripherals accross different categpries and recieve 
 ## Signup page
 ![sign up](./public/assets/readmeImages/signup-page.png)
 
+
+<a href="https://opensource.org/licenses/MIT">MIT License</a>
