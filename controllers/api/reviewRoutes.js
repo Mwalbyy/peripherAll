@@ -1,12 +1,15 @@
 const router = require('express').Router();
-const { Product, Review } = require('../../models');
+const { Product, Review, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all review
 router.get('/', async (req, res) => {
     try {
         const reviewData = await Review.findAll({
-            include: [{ model: Product, attributes: ['name'], }]
+            include: [
+                { model: Product, attributes: ['name'], },
+                { model: User, attributes: ['user_name'] },
+            ]
         });
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
@@ -14,6 +17,7 @@ router.get('/', async (req, res) => {
         res.render('reviewpageall', {
             reviews,
         });
+        
     } catch(err) {
         res.status(500).json(err);
     }
@@ -24,7 +28,10 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const reviewData = await Review.findByPk(req.params.id, {
-            include: [{ model: Product, attributes: ['name'], }]
+            include: [
+                { model: Product, attributes: ['name'], },
+                { model: User, attributes: ['user_name'] }
+            ]
         });
 
         const reviews = reviewData.get({ plain: true });
@@ -39,17 +46,17 @@ router.get('/:id', async (req, res) => {
 
 
 //create review
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const reviewData = await Review.create(req.body);
-        res.render('review');
+        res.status(200).json(reviewData);
     } catch(err) {
         res.status(400).json(err);
     }
 });
 
 //update review?
-router.put('/:id', withAuth, async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
         const reviewData = await Review.update(req.body, {
             where: {
@@ -62,7 +69,7 @@ router.put('/:id', withAuth, async (req, res) => {
     }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         const reviewData = await Review.destroy({
             where: {

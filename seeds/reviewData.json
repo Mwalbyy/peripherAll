@@ -10,6 +10,12 @@
         "stars": 5,
         "user_id": 2,
         "product_id": 1
+    },
+    {
+        "text": "Not bad!",
+        "stars": 5,
+        "user_id": 1,
+        "product_id": 2
     }
 ]
     
