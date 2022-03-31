@@ -2,16 +2,36 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --navText: #ebebeb;
   --headerBg: #2e2e2e;
   --navHover: #1f1f1f;
+  --black: black;
+  --orange:rgb(230, 149, 0);
+  --softWhite: rgb(228, 228, 228);
+}
+
+a {
+  text-decoration: none;
+  color: var(--navText);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--orange);
+  text-decoration: none;
+  align-items: center;
+  display: flex;
 }
 body {
-  background-color: grey;
+  background-color: rgb(24, 24, 24);
   font-family: 'Source Sans Pro', sans-serif;
+  color: var(--navText);
 }
-.btn{
+
+.btn {
   border: none;
   outline: none;
   color: var(--navText);
@@ -19,26 +39,21 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.login-btn{
-background-color: var(--navHover);
-}
 
+.login-btn {
+  background-color: var(--navHover);
+}
 
 .navLeft {
   float: left;
   overflow: hidden;
 }
-.logo {
-  font-weight: bold;
-  font-size: 30px;
-  color: var(--navText);
-  text-decoration: none;
-  align-items: center;
-  display: flex;
-}
+
+
 .navItems {
   text-decoration: none;
 }
+
 .navbar {
   display: flex;
   font-size: 24px;
@@ -48,14 +63,13 @@ background-color: var(--navHover);
   justify-content: space-around;
   height: 30px;
 }
-a {
-  text-decoration: none;
-  color: var(--navText);
-}
+
+
 .spaced {
-  margin:0 5px 0 15px ;
+  margin: 0 5px 0 15px;
 
 }
+
 .dropDown {
   margin-top: 13px;
   display: none;
@@ -63,6 +77,7 @@ a {
   background-color: var(--navHover);
   min-width: 150px;
 }
+
 .dropDown a {
   float: none;
   color: var(--navText);
@@ -72,50 +87,64 @@ a {
   text-align: left;
   margin-top: 0px;
 }
+
 .dropDown a:hover {
-    color: white;
-    background-color: var(--headerBg);
-    transition: .1s ;
+  color: white;
+  background-color: var(--headerBg);
+  transition: .1s;
 }
-.caretRotate{
-    transform: rotate(90deg);
-    transition: transform .1s;
+
+.caretRotate {
+  transform: rotate(90deg);
+  transition: transform .1s;
 }
-.search{
+
+.search {
   padding: 5px;
   border: none;
   font-size: 18px;
   color: var(--navText);
 }
+
 .dropDownLogin {
   margin-top: 10px;
-  background-color:var(--navHover);
+  background-color: var(--navHover);
   display: none;
 }
+
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
   transform-origin: top center
 }
+
 @keyframes growDown {
   0% {
-      transform: scaleY(0)
+    transform: scaleY(0)
   }
+
   80% {
-      transform: scaleY(1)
+    transform: scaleY(1)
   }
+
   100% {
-      transform: scaleY(1)
+    transform: scaleY(1)
   }
 }
+
 /* styling for categories and products */
 img {
-  height: 60px;
+  height: 100px;
   width: auto;
+  border: solid 5px var(--black);
 }
 .categoryDisplay{
   display: flex;
   margin-top:40px ;
+}
+
+.product {
+background-color: var();
 }
 .productImage {
   display: block;
@@ -123,6 +152,11 @@ img {
   margin-right: auto;
   width: auto;
   height: 400px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border: 5px solid black;
+  box-shadow: 10px 10px 10px var(--navHover);
+  height: 500px;
   padding-bottom: 20px;
   padding-top: 10px;
 }
@@ -131,31 +165,90 @@ img {
   text-align: center;
   text-decoration: underline;
   font-size: 40px;
+  padding-bottom: 20px;
 }
 
 .productDescription {
- padding-top: 20px;
- padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
  font-size: 12px;
  margin: 0 200px 0 200px;
-
+ border: 3px solid black;
  
 }
 
 .productPrice {
 text-align: center;
-padding-bottom: 15px;
+padding-bottom: 20px;
+padding-top: 20px;
 }
 
 .productLink {
 text-align: center;
 text-decoration: underline;
+--navText: rgb(23, 114, 23);
 }
 
 .productReviews {
-color: black;
+
+}
+
+.homeButton .btn {
+  cursor: pointer;
+  background-color: var(--black);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 25px;
+
+}
+{
+  font-size: 12px;
+  margin: 0 200px 0 200px;
+}
+
+.productPrice {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.productLink {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.categoryName {
+  margin-left: 30px;
+  font-size: 50px;
+  border-bottom: solid var(--orange);
 }
 .productCard{
   color: black;
+}
+
+.signup{
+  text-align: center;
+  font-size: 30px;
+}
+
+.signUpHeader{
+  font-size: 60px;
+}
+
+.signUpForm{
+  margin: 20px 0 20px 0;
+}
+
+.form-group{
+  margin: 10px 0 10px 0;
+}
+.password{
+  margin: 10px 50px 10px 0;
+}
+
+.categoryDisplay {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
 }

@@ -88,22 +88,6 @@
         "category_id": 7
     },
     {
-        "name": "Logitech G502",
-        "price": 149.99,
-        "image": "/Logitech-G502.jpeg",
-        "description": "Game faster and more accurately with G502 LIGHTSPEED. Enter the iconic gaming mouse from Logitech G now with superfast LIGHTSPEED wireless, redesigned internals, and POWERPLAY compatibility.",
-        "link": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_1?crid=JTX95JN5X6FI&keywords=Logitech+G+G502+LIGHTSPEED&qid=1648568104&s=books&sprefix=logitech+g+g502+lightspeed+%2Cstripbooks%2C77&sr=1-1",
-        "category_id": 7
-    },
-    {
-        "name": "Razer Viper",
-        "price": 109.99,
-        "image": "/Razer-Viper.jpg",
-        "description": "Made to perform better than any wireless technology, the low latency delivers high-speed transmission to register swipes and clicks instantaneously. Its also highly adaptive, able to switch seamlessly between frequencies to maintain peak stability, allowing you the freedom to compete at your best.",
-        "link": "https://www.amazon.com/Razer-Ultimate-Lightest-Wireless-Gaming/dp/B08565C5BB/ref=sr_1_2?crid=39295SD5IUG1X&keywords=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse&qid=1648568372&s=books&sprefix=razer%2Bviper%2Bultimate%2Bgaming%2Bmouse%2Cstripbooks%2C44&sr=1-2-catcorr&th=1",
-        "category_id": 7
-    },
-    {
         "name": "Logitech G502 Wireless",
         "price": 149.99,
         "image": "/Logitech-G502.jpeg",
