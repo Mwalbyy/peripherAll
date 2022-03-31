@@ -1,11 +1,11 @@
 <div class="categories">
     {{#each categories as |category|}}
+    <h1 class="categoryName">{{category.name}}</h1>
     <div class="categoryDisplay">
-        <h1 class="categoryName">{{category.name}}</h1>
         {{#each category.products as |product|}}
         <div class="productCard">
             <a href="api/product/{{product.id}}"> <img src="/assets/images/{{product.image}}"></a>
-            <h2 class="productName">{{product.name}}</h2>
+            <h2 class="product-name">{{product.name}}</h2>
         </div>
         {{/each}}
     </div>
