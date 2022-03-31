@@ -1,10 +1,16 @@
-{{#with products as |product| }}
-<div class="product">
-<h1>{{product.name}}</h1>
-<img src="/assets/images/{{product.image}}"/>
-<h1>{{product.description}}</h1>
-<h1>{{product.price}}.00</h1>
-<h1><a href="{{product.link}}"></a></h1>
-<h1>{{product.reviews}}</h1>
-</div>
+{{#with products as |product|}}
+    <div class="product">
+        <img class="productImage" src="/assets/images/{{product.image}}" />
+        <h1 class="productName">{{product.name}}</h1>
+        <div class="productDescription">
+            <h1> {{product.description}}</h1>
+        </div>
+        <div class="productPrice">
+            <h1> Price: ${{product.price}}.00</h1>
+        </div>
+        <div class="productLink">
+            <h1><a href="{{product.link}}">Buy Here!</a></h1>
+        </div>
+        <h1 class="productReviews">{{product.reviews}}</h1>
+    </div>
 {{/with}}
