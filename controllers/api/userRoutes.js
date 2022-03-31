@@ -6,12 +6,12 @@ const bcrypt = require('bcrypt');
 router.post('/userSignup', async (req, res) => {
 try {
 
-    const {userFromSignUp, passwordFromSignUp} = req.body;
+    const {userFromSignUp,emailFromSignUp, passwordFromSignUp} = req.body;
     
     const newUser = await User.create({
         userName: userFromSignUp,
-        hashedPassword: bcrypt.hashSync(passwordFromSignUp, bcrypt.genSaltSync()),
-    
+        email: emailFromSignUp,
+        Password: bcrypt.hashSync(passwordFromSignUp, bcrypt.genSaltSync()),
     });
     res.json(newUser);
 } catch (err) {
