@@ -11,6 +11,14 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        product_name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            references: {
+                model: 'product',
+                key: 'name',
+            }
+        },
         product_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
