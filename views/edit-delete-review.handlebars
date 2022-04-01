@@ -1,8 +1,18 @@
 <div>
     <h2>Update/Delete Review</h2>
     <form class = "update-review-form">
+        <!-- For updating rating/stars -->
+        <label>Your rating: </label>
+        <input class="search"id = "rating-entry" type = "text" value = "{{review.rating}}" />
+
+        <!-- For updating review text -->
+        <label>Your review: </label>
+        <input class="search"id = "review-entry" type = "text" value = "{{review.text}}" />
+
+        <button type = "submit">Update Review.</button>
         <button type = "button" class = "delete-review-btn">Delete Review</button>
     </form>
 </div>
 
+<script src = "/js/updateReview.js"></script>
 <script src = "/js/deleteReview.js"></script>
