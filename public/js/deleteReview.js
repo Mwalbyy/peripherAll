@@ -26,5 +26,4 @@ async function deleteFormHandler(event) {
     }
 };
 
-//TODO
-document.querySelector("#new-review-form").addEventListener('submit', submitFormHandler);
+document.querySelector(".delete-review-btn").addEventListener('click', deleteFormHandler);
