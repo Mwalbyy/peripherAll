@@ -59,6 +59,9 @@ body {
   justify-content: space-around;
   height: 30px;
 }
+.dropDownBtn {
+  margin-left:10px ;
+}
 /* styling used in category drop down*/
 .dropDown {
   margin-top: 13px;
@@ -75,6 +78,7 @@ body {
   display: block;
   text-align: left;
   margin-top: 0px;
+  text-decoration: underline;
 }
 /* hover effect for category dropdown */
 .dropDown a:hover {

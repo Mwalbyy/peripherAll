@@ -1,11 +1,9 @@
 <div class="navbar">
     <div class="logo">
         <h1>PeripherAll</h1>
-    </div>
     <div class="navLeft">
         <button onclick="dropDown()" class="dropDownBtn btn">
-            categories
-            <i id="caret-drop" class="fa-solid fa-bars"></i>
+            <i id="caret-drop" class="fa-solid fa-bars fa-lg"></i>
         </button>
         <div id="dropDownId" class="dropDown">
             {{#each categories as |category|}}
@@ -13,9 +11,10 @@
             {{/each}}
         </div>
     </div>
+    </div>
     <div class="navRight">
         <button onClick="loginDrop()" class="btn spaced" href="">login
-            <i class="fa-solid fa-door-open fa-xs"></i>
+            <i class="fa-solid fa-door-open fa-xs fa-bounce"></i>
         </button>
         <div id="dropDownLoginId" class="dropDownLogin">
             <form class="signInForm">
