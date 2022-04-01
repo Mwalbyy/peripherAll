@@ -1,7 +1,5 @@
 <h1><a href="">OUR TITLE HERE</a></h1>
 
-# Creators:
-<h1><a href="https://github.com/Mwalbyy">Marcus</a>, <a href="https://github.com/SamiF812">Sami</a>, <a href="https://github.com/danchanyyoungkim">Dan</a>, and <a href="https://github.com/dyl-17">Dylan</a></h1>
 
 ## Description
 
@@ -27,3 +25,15 @@ A user can search computer peripherals accross different categpries and recieve 
 
 
 <a href="https://opensource.org/licenses/MIT">MIT License</a>
+
+# Contributors
+
+[![Link to Marcus's github](https://img.shields.io/badge/Marcus%20-GitHub-blue)](https://github.com/Mwalbyy)
+
+[![Link to Dan's github](https://img.shields.io/badge/Dan%20-GitHub-blue)](https://github.com/danchanyoungkim)
+
+[![Link to Sami's github](https://img.shields.io/badge/Sami%20-GitHub-blue)](https://github.com/SamiF812)
+
+[![Link to Dylan's Walby's github](https://img.shields.io/badge/Dylan%20-GitHub-blue)](https://github.com/dyl-17)
+
+[![MIT](https://img.shields.io/badge/License%20-MIT-orange)](https://opensource.org/licenses/MIT)
