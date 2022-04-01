@@ -12,6 +12,10 @@
   --softWhite: rgb(228, 228, 228);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: var(--navText);
@@ -120,7 +124,7 @@ body {
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
-  transform-origin: top center
+  transform-origin: top center;
 }
 
 @keyframes growDown {
@@ -142,7 +146,7 @@ img {
   height: 150px;
   width: auto;
   border: solid 3px rgb(0, 0, 0);
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .imgHome:hover {
