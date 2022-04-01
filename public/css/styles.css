@@ -121,6 +121,10 @@ body {
   margin-left: 15px;
 }
 
+.email {
+  margin-left: 31px;
+}
+
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
@@ -243,7 +247,17 @@ margin: 0 50px 0 50px;
 .categoryName {
   margin-left: 30px;
   font-size: 50px;
-  border-bottom: solid var(--orange);
+  background:
+    linear-gradient(
+      to right,
+      var(--orange),
+      rgb(24, 24, 24) 
+    )
+    left 
+    bottom
+    rgb(24, 24, 24)    
+    no-repeat; 
+  background-size:100% 5px ;
 }
 
 .signup {
@@ -274,6 +288,7 @@ margin: 0 50px 0 50px;
 }
 
 .product-name {
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
 }
