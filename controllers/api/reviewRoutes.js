@@ -36,9 +36,10 @@ router.get('/:id', async (req, res) => {
 
         const reviews = reviewData.get({ plain: true });
 
-        res.render('reviewpage', {
-            reviews,
-        });
+        // res.render('reviewpage', {
+        //     reviews,
+        // });
+        res.status(200).json(reviews)
     } catch(err) {
         res.status(500).json(err);
     }
