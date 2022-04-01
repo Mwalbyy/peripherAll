@@ -43,6 +43,7 @@ body {
   background-color: var(--headerBg);
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
 }
 
 .login-btn {
@@ -382,3 +383,35 @@ img {
 }
 
 /* Slideshow */
+
+.createReview {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.userInfoReview {
+  text-align: start;
+  font-size: 12px;
+  }
+  
+.ratingStar {
+  text-align: start;
+}
+
+.reviewDetails {
+  text-align: center;
+  font-size: 12px;
+}
+
+.userReviewFull {
+  margin: 25px 200px 50px 200px;
+  border: 5px solid black;
+
+}
+
+.reviewText {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: start;
+  
+}
