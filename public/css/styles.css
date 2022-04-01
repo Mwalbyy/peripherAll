@@ -107,6 +107,9 @@ body {
   z-index: 7;
   padding: 2px;
 }
+.profilePad{
+  padding: 15px
+}
 /* CSS for the dropdown effect */
 .show {
   display: block;
