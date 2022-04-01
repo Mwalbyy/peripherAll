@@ -20,7 +20,7 @@ async function deleteFormHandler(event) {
 
     // If response is good, then refresh page to same page once review is submitted.
     if (response.ok) {
-        document.location.replace('/api/product/' + `${id}`);
+        document.location.replace('dashboard/');
     // If not, give response error number.
     } else {
         alert(response.statusText);

@@ -26,7 +26,7 @@ async function updateFormHandler(event) {
 
     // If response is good, then refresh page to same page once review is submitted.
     if (response.ok) {
-        document.location.replace('/accountActivity');
+        document.location.replace('/dashboard/');
     // If not, give response error number.
     } else {
         alert(response.statusText);
