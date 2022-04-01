@@ -1,8 +1,4 @@
 {{> product-details}}
 {{> submit-review}}
 {{> edit-delete-review}}
-
-{{!-- TODO: Figure out how to json.parse [object, object] --}}
-{{#with products as |product|}}
-    <h1 id="productReviews" class="productReviews">Reviews: {{reviews}}</h1>
-{{/with}}
+{{> product-review}}
