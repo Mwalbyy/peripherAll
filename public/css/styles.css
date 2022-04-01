@@ -120,6 +120,10 @@ body {
   margin-left: 15px;
 }
 
+.email {
+  margin-left: 31px;
+}
+
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
