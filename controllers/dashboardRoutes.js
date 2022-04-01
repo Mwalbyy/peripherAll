@@ -5,9 +5,9 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
-        where: {
-            user_id: req.session.user_id,
-        },
+        // where: {
+        //     user_id: req.session.user_id,
+        // },
         attributes: ['id', 'product_id', 'date_created', 'stars', 'text', 'product'],
         include: [
             {
@@ -17,7 +17,7 @@ router.get('/', async (req,res) => {
         ],
     })
         const reviews = reviewData.map((review) => review.get({ plain: true }));
-            res.render('homepage', {
+            res.render('dashboard', {
                 reviews,
                 // logged_in: true,
                 // user_name: req.session.user_name,
@@ -30,9 +30,9 @@ router.get('/', async (req,res) => {
 router.get('/update/:id', async (req,res) => {
     try {
     const reviewData = await Review.findOne({
-        where: {
-            id: req.params.id,
-        },
+        // where: {
+        //     id: req.params.id,
+        // },
         attributes: ['id', 'product_id', 'date_created', 'stars', 'text', 'product'],
         include: [
             {

@@ -1,4 +1,3 @@
-// TODO NEEDS PLANNING
 // Script for deleting reviews.
 async function deleteFormHandler(event) {
     event.preventDefault();
