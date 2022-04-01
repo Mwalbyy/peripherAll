@@ -372,16 +372,18 @@ img {
 .createReview {
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 65px;
+}
+.createReview h3 {
+  margin-bottom: 20px;
 }
 
 .userInfoReview {
   text-align: start;
   font-size: 12px;
+  border-bottom: solid var(--orange);
   }
   
-.ratingStar {
-  text-align: start;
-}
 
 .reviewDetails {
   text-align: center;
@@ -398,5 +400,6 @@ img {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: start;
+  font-size: 18px;
   
 }
