@@ -4,7 +4,7 @@
     <div class="categoryDisplay">
         {{#each category.products as |product|}}
         <div class="productCard">
-            <a href="api/product/{{product.id}}"> <img src="/assets/images/{{product.image}}"></a>
+            <a href="api/product/{{product.id}}"> <img class="imgHome" src="/assets/images/{{product.image}}"></a>
             <h2 class="product-name">{{product.name}}</h2>
         </div>
         {{/each}}

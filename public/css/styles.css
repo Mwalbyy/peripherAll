@@ -8,7 +8,7 @@
   --headerBg: #2e2e2e;
   --navHover: #1f1f1f;
   --black: black;
-  --orange:rgb(230, 149, 0);
+  --orange: rgb(230, 149, 0);
   --softWhite: rgb(228, 228, 228);
 }
 
@@ -25,6 +25,7 @@ a {
   align-items: center;
   display: flex;
 }
+
 body {
   background-color: rgb(24, 24, 24);
   font-family: 'Source Sans Pro', sans-serif;
@@ -136,16 +137,24 @@ body {
 img {
   height: 100px;
   width: auto;
-  border: solid 5px var(--black);
+  border: solid 3px rgb(0, 0, 0);
+  vertical-align: middle
 }
-.categoryDisplay{
+
+.imgHome:hover {
+  transition: 100ms;
+  opacity: .6;
+}
+
+.categoryDisplay {
   display: flex;
-  margin-top:40px ;
+  margin-top: 40px;
 }
 
 .product {
-background-color: var();
+  background-color: var();
 }
+
 .productImage {
   display: block;
   margin-left: auto;
@@ -170,22 +179,22 @@ background-color: var();
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
- font-size: 12px;
- margin: 0 200px 0 200px;
- border: 3px solid black;
- 
+  font-size: 12px;
+  margin: 0 200px 0 200px;
+  border: 3px solid black;
+
 }
 
 .productPrice {
-text-align: center;
-padding-bottom: 20px;
-padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .productLink {
-text-align: center;
-text-decoration: underline;
---navText: rgb(23, 114, 23);
+  text-align: center;
+  text-decoration: underline;
+  --navText: rgb(23, 114, 23);
 }
 
 .homeButton .btn {
@@ -213,27 +222,25 @@ text-decoration: underline;
   font-size: 50px;
   border-bottom: solid var(--orange);
 }
-.productCard{
-  color: black;
-}
 
-.signup{
+.signup {
   text-align: center;
   font-size: 30px;
 }
 
-.signUpHeader{
+.signUpHeader {
   font-size: 60px;
 }
 
-.signUpForm{
+.signUpForm {
   margin: 20px 0 20px 0;
 }
 
-.form-group{
+.form-group {
   margin: 10px 0 10px 0;
 }
-.password{
+
+.password {
   margin: 10px 50px 10px 0;
 }
 
@@ -242,3 +249,111 @@ text-decoration: underline;
   margin-top: 40px;
   justify-content: space-around;
 }
+
+.product-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Slideshow */
+
+.mySlides {
+  display: none
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+.slideImages{
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+
+/* Slideshow */
