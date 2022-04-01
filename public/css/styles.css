@@ -161,19 +161,29 @@ img {
 
 .product {
   background-color: var();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .productImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+  
   height: 400px;
   margin-bottom: 20px;
   margin-top: 40px;
   border: 5px solid black;
   box-shadow: 10px 10px 10px var(--navHover);
   height: 500px;
+}
+@media only screen and (max-width: 992px) {
+  .productImage{
+    height: 200px;
+  }
+  .userReviewFull{
+    margin: 25px 50px 25px 50px;
+  }
+  
+  
 }
 
 .productName {
@@ -184,14 +194,19 @@ img {
 }
 
 .productDescription {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   text-align: center;
   font-size: 12px;
-  margin: 0 200px 0 200px;
+  margin: 0 150px 0 150px;
   border: 3px solid black;
-
 }
+
+@media only screen and (max-width:992px ) {
+.productDescription {
+margin: 0 50px 0 50px;
+}
+}
+  
 
 .productPrice {
   text-align: center;
@@ -369,19 +384,27 @@ img {
 
 /* Slideshow */
 
+#new-review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
 .createReview {
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 65px;
+}
+.createReview h3 {
+  margin-bottom: 20px;
 }
 
 .userInfoReview {
   text-align: start;
   font-size: 12px;
+  border-bottom: solid var(--orange);
   }
   
-.ratingStar {
-  text-align: start;
-}
 
 .reviewDetails {
   text-align: center;
@@ -389,8 +412,9 @@ img {
 }
 
 .userReviewFull {
-  margin: 25px 200px 50px 200px;
   border: 5px solid black;
+  margin: 25px 100px 25px 100px;
+  padding: 5px;
 
 }
 
@@ -398,5 +422,6 @@ img {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: start;
+  font-size: 12pt;
   
 }
