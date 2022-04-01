@@ -175,11 +175,14 @@ img {
   box-shadow: 10px 10px 10px var(--navHover);
   height: 500px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   .productImage{
     height: 200px;
-    
   }
+  .userReviewFull{
+    margin: 25px 50px 25px 50px;
+  }
+  
   
 }
 
@@ -198,7 +201,7 @@ img {
   border: 3px solid black;
 }
 
-@media only screen and (max-width:1000px ) {
+@media only screen and (max-width:992px ) {
 .productDescription {
 margin: 0 50px 0 50px;
 }
@@ -409,8 +412,9 @@ margin: 0 50px 0 50px;
 }
 
 .userReviewFull {
-  margin: 25px 200px 50px 200px;
   border: 5px solid black;
+  margin: 25px 100px 25px 100px;
+  padding: 5px;
 
 }
 
@@ -418,6 +422,6 @@ margin: 0 50px 0 50px;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: start;
-  font-size: 1px;
+  font-size: 12pt;
   
 }
