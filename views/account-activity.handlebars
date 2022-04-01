@@ -2,7 +2,7 @@
 <div>
     <h2>Your reviews</h2>
     {{#each products.reviews as |review|}}
-    {{!-- {{partial for info}} --}}
+    {{> account-review}}
     {{/each}}
 </div>
 {{/if}}
