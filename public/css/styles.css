@@ -51,8 +51,6 @@ body {
 }
 
 .navLeft {
-  float: left;
-  overflow: hidden;
 }
 
 
@@ -68,11 +66,6 @@ body {
   padding: 15px;
   justify-content: space-around;
   height: 30px;
-}
-
-.spaced {
-  margin: 0 5px 0 15px;
-
 }
 
 .dropDown {
@@ -113,12 +106,16 @@ body {
 }
 
 .dropDownLogin {
-  margin-top: 10px;
+  margin-top: 14px;
   background-color: var(--navHover);
   display: none;
   position: relative;
   z-index: 7;
-  margin-left: 15px;
+  padding: 0 10px 0 10px;
+}
+
+.email {
+  margin-left: 31px;
 }
 
 .show {
@@ -145,7 +142,6 @@ body {
 img {
   height: 150px;
   width: auto;
-  border: solid 3px rgb(0, 0, 0);
   vertical-align: middle;
 }
 
@@ -154,26 +150,36 @@ img {
   opacity: .6;
 }
 
-.categoryDisplay {
-  display: flex;
-  margin-top: 40px;
+.productCard{
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .product {
   background-color: var();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .productImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+  
   height: 400px;
   margin-bottom: 20px;
   margin-top: 40px;
   border: 5px solid black;
   box-shadow: 10px 10px 10px var(--navHover);
   height: 500px;
+}
+@media only screen and (max-width: 992px) {
+  .productImage{
+    height: 200px;
+  }
+  .userReviewFull{
+    margin: 25px 50px 25px 50px;
+  }
+  
+  
 }
 
 .productName {
@@ -184,14 +190,19 @@ img {
 }
 
 .productDescription {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   text-align: center;
   font-size: 12px;
-  margin: 0 200px 0 200px;
+  margin: 0 150px 0 150px;
   border: 3px solid black;
-
 }
+
+@media only screen and (max-width:992px ) {
+.productDescription {
+margin: 0 50px 0 50px;
+}
+}
+  
 
 .productPrice {
   text-align: center;
@@ -228,7 +239,17 @@ img {
 .categoryName {
   margin-left: 30px;
   font-size: 50px;
-  border-bottom: solid var(--orange);
+  background:
+    linear-gradient(
+      to right,
+      var(--orange),
+      rgb(24, 24, 24) 
+    )
+    left 
+    bottom
+    rgb(24, 24, 24)    
+    no-repeat; 
+  background-size:100% 5px ;
 }
 
 .signup {
@@ -257,10 +278,21 @@ img {
   margin-top: 40px;
   justify-content: space-around;
 }
+@media only screen and (max-width: 1300px) {
+  .categoryDisplay{
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-name {
+    font-size: 24px;
+  }
+}
 
 .product-name {
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
+  text-align: center;
 }
 
 /* Slideshow */
@@ -369,19 +401,27 @@ img {
 
 /* Slideshow */
 
+#new-review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
 .createReview {
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 65px;
+}
+.createReview h3 {
+  margin-bottom: 20px;
 }
 
 .userInfoReview {
   text-align: start;
   font-size: 12px;
+  border-bottom: solid var(--orange);
   }
   
-.ratingStar {
-  text-align: start;
-}
 
 .reviewDetails {
   text-align: center;
@@ -389,8 +429,9 @@ img {
 }
 
 .userReviewFull {
-  margin: 25px 200px 50px 200px;
   border: 5px solid black;
+  margin: 25px 100px 25px 100px;
+  padding: 5px;
 
 }
 
@@ -398,5 +439,6 @@ img {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: start;
+  font-size: 12pt;
   
 }

@@ -1,9 +1,11 @@
-{{#if reviews.length}}
+{{> nav-bar}}
 <div>
-    <h2>Your reviews</h2>
-    {{#each products.reviews as |review|}}
-    {{> account-review}}
-    {{/each}}
+    <div class = "top">
+        <h1 class="productName">Hello!</h1>
+        <h2>All your reviews</h2>
+    </div>
+    <div>
+        {{> account-review}}
+    </div>    
 </div>
-{{/if}}
 

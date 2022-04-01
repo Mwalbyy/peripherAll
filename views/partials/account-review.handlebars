@@ -1,5 +1,10 @@
+{{#each reviews as |review|}}
 <div>
     <div>
-        <h4><a href = "/dashboard/update/{{id}}">?</a></h4>
+        <h2><a href = "/dashboard/update/{{id}}">Your review for: {{product.name}}</a></h2>
+        <h2>Reviewed on: {{date_created}}</h2>
+        <h2>Your rating: {{stars}}</h2>
+        <h2>Your review description: {{text}}</h2>
     </div>
 </div>
+{{/each}}

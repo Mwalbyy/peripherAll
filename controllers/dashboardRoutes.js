@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Review, User } = require('../models');
+const { Product, Review, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req,res) => {
@@ -8,17 +8,22 @@ router.get('/', async (req,res) => {
         // where: {
         //     user_id: req.session.user_id,
         // },
-        attributes: ['id', 'product_id', 'date_created', 'stars', 'text', 'product'],
+        attributes: ['id', 'product_id', 'date_created', 'stars', 'text'],
         include: [
             {
                 model: User,
                 attributes: ['user_name'],
             },
+            {
+                model: Product,
+                attributes: ['name'],
+            }
         ],
     })
         const reviews = reviewData.map((review) => review.get({ plain: true }));
             res.render('dashboard', {
                 reviews,
+                style: 'dashboard.css',
                 // logged_in: true,
                 // user_name: req.session.user_name,
             });
@@ -33,17 +38,22 @@ router.get('/update/:id', async (req,res) => {
         // where: {
         //     id: req.params.id,
         // },
-        attributes: ['id', 'product_id', 'date_created', 'stars', 'text', 'product'],
+        attributes: ['id', 'product_id', 'date_created', 'stars', 'text'],
         include: [
             {
                 model: User,
                 attributes: ['user_name'],
+            },
+            {
+                model: Product,
+                attributes: ['name'],
             },
         ],
     })
         const reviews = reviewData.get({ plain: true });
             res.render('edit-delete-review', {
                 reviews,
+                style: 'dashboard.css',
                 // logged_in: true,
                 // user_name: req.session.username,
             });
