@@ -1,153 +1,155 @@
-.product {
-    background-color: var();
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
+/* centers the image at top of screen */
+.productTop {
+  display: flex;
+  justify-content: center;
+}
+/* Image size and style */
+.productImage {
+  height: 500px;
+  margin: 0 40px 0 40px;
+  border: 5px solid black;
+}
+/* max size response */
+@media only screen and (max-width: 1200px) {
   .productImage {
-    
-    height: 400px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    border: 5px solid black;
-    box-shadow: 10px 10px 10px var(--navHover);
-    height: 500px;
+    height: 300px;
   }
-  @media only screen and (max-width: 992px) {
-    .productImage{
-      height: 200px;
-    }
-    .userReviewFull{
-      margin: 25px 50px 25px 50px;
-    }
-    
-    
-  }
-  
-  .productName {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
-    padding-bottom: 20px;
-  }
-  
-  .productDescription {
-    padding: 20px;
-    text-align: center;
-    font-size: 12px;
-    margin: 0 150px 0 150px;
-    border: 3px solid black;
-  }
-  
-  @media only screen and (max-width:992px ) {
-  .productDescription {
-  margin: 0 50px 0 50px;
-  }
-  }
-    
-  
-  .productPrice {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  
-  .productLink {
-    text-align: center;
-    text-decoration: underline;
-    --navText: rgb(23, 114, 23);
-  }
-  
-  .homeButton .btn {
-    cursor: pointer;
-    background-color: var(--black);
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 25px;
-  
-  }
-  
-  .productPrice {
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  
-  .productLink {
-    text-align: center;
-    text-decoration: underline;
-  }
-  
-  
-  .signup {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .signUpHeader {
-    font-size: 60px;
-  }
-  
-  .signUpForm {
-    margin: 20px 0 20px 0;
-  }
-  
-  .form-group {
-    margin: 10px 0 10px 0;
-  }
-  
-  .password {
-    margin: 10px 50px 10px 0;
-  }
-  
-  
-  .product-name {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-  }
-  
-  
-  #new-review-form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
-  }
-  
-  .createReview {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 65px;
-  }
-  .createReview h3 {
-    margin-bottom: 20px;
-  }
-  
-  .userInfoReview {
-    text-align: start;
-    font-size: 12px;
-    border-bottom: solid var(--orange);
-    }
-    
-  
-  .reviewDetails {
-    text-align: center;
-    font-size: 12px;
-  }
-  
   .userReviewFull {
-    border: 5px solid black;
-    margin: 25px 100px 25px 100px;
-    padding: 5px;
-  
+    margin: 25px 50px 25px 50px;
   }
-  
-  .reviewText {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: start;
-    font-size: 12pt;
-    
+  .productDescription {
+    margin: 0 50px 0 50px;
   }
+}
+/* mid size response */
+@media only screen and (max-width: 992px) {
+  .productImage {
+    height: 200px;
+  }
+  .userReviewFull {
+    margin: 25px 25px 25px 50px;
+  }
+  .productDescription {
+    margin: 0 50px 0 50px;
+  }
+}
+/* styling for the products name */
+.product{
+  background-color: rgb(15, 15, 15);
+}
+.productName {
+  text-align: center;
+  border-bottom: 5px solid var(--orange) ;
+  font-size: 60px;
+  padding-bottom: 20px;
+  margin: 10px 152px;
+}
+
+.productDescription {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 150px 0 150px;
+}
+
+.productPrice {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.productLink {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.homeButton .btn {
+  cursor: pointer;
+  background-color: var(--black);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 25px;
+
+}
+.purchaseLink{
+  text-decoration: underline;
+}
+
+.productPurchase {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.signup {
+  text-align: center;
+  font-size: 30px;
+}
+
+.signUpHeader {
+  font-size: 60px;
+}
+
+.signUpForm {
+  margin: 20px 0 20px 0;
+}
+
+.form-group {
+  margin: 10px 0 10px 0;
+}
+
+.password {
+  margin: 10px 50px 10px 0;
+}
+
+
+.product-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+#new-review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.createReview {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+
+.createReview h3 {
+  margin-bottom: 20px;
+}
+
+.userInfoReview {
+  text-align: start;
+  font-size: 12px;
+  border-bottom: solid var(--orange);
+}
+
+
+.reviewDetails {
+  text-align: center;
+  font-size: 12px;
+}
+
+.userReviewFull {
+  border: 5px solid black;
+  margin: 25px 100px 25px 100px;
+  padding: 5px;
+
+}
+
+.reviewText {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: start;
+  font-size: 12pt;
+
+}
