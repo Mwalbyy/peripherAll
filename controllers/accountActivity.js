@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Product, Review, Category, User } = require('../models');
+const { Review, User } = require('../models');
 const withAuth = require('../utils/auth');
 const { post } = require('./api/reviewRoutes');
 
@@ -51,6 +51,15 @@ router.get('/update/:id', withAuth, (req,res) => {
             
             const review = reviewData.get({ plain: true });
             console.log('sending' + req.session.user_name);
-            res.render('')
+            res.render('edit-delete-review', {
+                review,
+                logged_in: true,
+                user_name: req.session.username,
+            });
         })
-})
+        .catch((err) => {
+            res.status(500).json(err);
+        });
+});
+
+module.exports = router;
