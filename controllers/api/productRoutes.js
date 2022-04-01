@@ -38,7 +38,10 @@ router.get('/:id', async (req, res) => {
             },
           ],
         });
-        const products = productData.get({ plain:true });
+        
+        const products =productData.get({ plain:true });
+        console.log(products)
+        
         res.render('productpage', {
             products
         })

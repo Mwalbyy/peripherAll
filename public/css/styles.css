@@ -111,6 +111,7 @@ body {
   margin-top: 10px;
   background-color: var(--navHover);
   display: none;
+  z-index: 7;
 }
 
 .show {
