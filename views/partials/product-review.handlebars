@@ -1,4 +1,6 @@
 {{#each products.reviews as |review|}}
-    <h1 id="productReviews" class="productReviews">Reviews: {{review.text}}</h1>
+    <h2>Date created: {{review.date_created}}</h2>
+    <h2>Rating: {{review.stars}}</h2>
+    <h2 id="productReviews" class="productReviews">Reviews: {{review.text}}</h2>
     <h2>{{review.user.user_name}}</h2>
 {{/each}}
