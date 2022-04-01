@@ -14,10 +14,10 @@ router.get('/', async (req, res) => {
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.render('reviewpageall', {
-            reviews,
-        });
-        
+        // res.render('reviewpageall', {
+        //     reviews,
+        // });
+        res.status(200).json(reviews)
     } catch(err) {
         res.status(500).json(err);
     }
@@ -80,7 +80,7 @@ router.delete('/:id', async (req, res) => {
             res.status(404).json({ message: 'No review found with this id!' });
             return;
         }
-        res.render('review');
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }
