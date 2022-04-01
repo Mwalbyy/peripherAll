@@ -12,6 +12,10 @@
   --softWhite: rgb(228, 228, 228);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: var(--navText);
@@ -77,6 +81,7 @@ body {
   position: absolute;
   background-color: var(--navHover);
   min-width: 150px;
+  z-index: 7;
 }
 
 .dropDown a {
@@ -111,12 +116,14 @@ body {
   margin-top: 10px;
   background-color: var(--navHover);
   display: none;
+  position: relative;
+  z-index: 7;
 }
 
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
-  transform-origin: top center
+  transform-origin: top center;
 }
 
 @keyframes growDown {
@@ -138,7 +145,7 @@ img {
   height: 100px;
   width: auto;
   border: solid 3px rgb(0, 0, 0);
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .imgHome:hover {

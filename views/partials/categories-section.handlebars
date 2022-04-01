@@ -1,6 +1,6 @@
 <div class="categories">
     {{#each categories as |category|}}
-    <h1 class="categoryName">{{category.name}}</h1>
+    <h1 class="categoryName" id="{{category.name}}">{{category.name}}</h1>
     <div class="categoryDisplay">
         {{#each category.products as |product|}}
         <div class="productCard">
