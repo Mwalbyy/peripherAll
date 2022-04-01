@@ -51,8 +51,6 @@ body {
 }
 
 .navLeft {
-  float: left;
-  overflow: hidden;
 }
 
 
@@ -68,11 +66,6 @@ body {
   padding: 15px;
   justify-content: space-around;
   height: 30px;
-}
-
-.spaced {
-  margin: 0 5px 0 15px;
-
 }
 
 .dropDown {
@@ -113,12 +106,12 @@ body {
 }
 
 .dropDownLogin {
-  margin-top: 10px;
+  margin-top: 14px;
   background-color: var(--navHover);
   display: none;
   position: relative;
   z-index: 7;
-  margin-left: 15px;
+  padding: 0 10px 0 10px;
 }
 
 .show {
@@ -145,7 +138,6 @@ body {
 img {
   height: 150px;
   width: auto;
-  border: solid 3px rgb(0, 0, 0);
   vertical-align: middle;
 }
 
@@ -154,9 +146,9 @@ img {
   opacity: .6;
 }
 
-.categoryDisplay {
-  display: flex;
-  margin-top: 40px;
+.productCard{
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .product {
@@ -257,10 +249,20 @@ img {
   margin-top: 40px;
   justify-content: space-around;
 }
+@media only screen and (max-width: 1300px) {
+  .categoryDisplay{
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-name {
+    font-size: 24px;
+  }
+}
 
 .product-name {
   font-size: 18px;
   font-weight: 400;
+  text-align: center;
 }
 
 /* Slideshow */
