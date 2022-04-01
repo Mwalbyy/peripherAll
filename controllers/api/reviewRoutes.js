@@ -14,10 +14,10 @@ router.get('/', async (req, res) => {
         
         const reviews = reviewData.map((review) => review.get({ plain: true }));
 
-        res.render('reviewpageall', {
-            reviews,
-        });
-        
+        // res.render('reviewpageall', {
+        //     reviews,
+        // });
+        res.status(200).json(reviews)
     } catch(err) {
         res.status(500).json(err);
     }
@@ -36,9 +36,10 @@ router.get('/:id', async (req, res) => {
 
         const reviews = reviewData.get({ plain: true });
 
-        res.render('reviewpage', {
-            reviews,
-        });
+        // res.render('reviewpage', {
+        //     reviews,
+        // });
+        res.status(200).json(reviews)
     } catch(err) {
         res.status(500).json(err);
     }
@@ -63,7 +64,7 @@ router.put('/:id', async (req, res) => {
                 id: req.params.id
             }
         });
-        res.render('review');
+        res.status(200).json(reviewData);
     } catch(err) {
         res.status(500).json(err);
     }
@@ -80,7 +81,7 @@ router.delete('/:id', async (req, res) => {
             res.status(404).json({ message: 'No review found with this id!' });
             return;
         }
-        res.render('review');
+        res.status(200).json(reviewData)
     } catch(err) {
         res.status(500).json(err);
     }

@@ -25,11 +25,17 @@ router.get('/', async (req, res) => {
 });
 
 // original one product call
-router.get('/:id', async (req, res) =>{
+router.get('/:id', async (req, res) => {
     try {
         const productData = await Product.findByPk(req.params.id, {
           include: [
-            { model: Review, attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'] },
+            { model: Review, 
+            attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'],
+            include: {
+              model: User,
+              attributes: ['user_name'],
+            }
+            },
           ],
         });
         const products = productData.get({ plain:true });
