@@ -50,6 +50,7 @@ router.get('/update/:id', withAuth, (req,res) => {
             }
             
             const review = reviewData.get({ plain: true });
-            console.log('sending' + req.session.user_name)
+            console.log('sending' + req.session.user_name);
+            res.render('')
         })
 })
