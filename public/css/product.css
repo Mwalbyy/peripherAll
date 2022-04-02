@@ -115,12 +115,14 @@
   text-align: center;
   padding-bottom: 15px;
 }
+
 /* underline in reviews + font */
 .userInfoReview {
   text-align: start;
   font-size: 12px;
   border-bottom: solid var(--orange);
 }
+
 /* styling for the review itself */
 .reviewText {
   margin-top: 50px;
@@ -128,29 +130,34 @@
   text-align: start;
   font-size: 12pt;
 }
+
 /* styling that holds all of the CREATE review info  */
 .createReview {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 20px;
-  padding:20px 0;
+  padding: 20px 0;
   background-color: var(--deepBlack);
 }
+
 /* container for the text inputs */
 #new-review-form {
   display: flex;
   flex-direction: column;
   padding: 0 100px;
 }
+
 /* margin for Submit header  */
 .createReview h3 {
   margin-bottom: 10px;
 }
+
 /* centers */
 .reviewDetails {
   text-align: center;
   font-size: 12px;
 }
+
 /* makes rounded boxes */
 .userReviewFull {
   background-color: var(--deepBlack);
@@ -158,33 +165,3 @@
   padding: 15px;
   border-radius: 25px;
 }
-/* TODO: Move to new css file */
-/* TODO: ADD BACK DROP TO PAGE */
-.signup {
-  text-align: center;
-  font-size: 30px;
-}
-
-.signUpHeader {
-  font-size: 60px;
-}
-
-.signUpForm {
-  margin: 20px 0 20px 0;
-}
-
-.form-group {
-  margin: 10px 0 10px 0;
-}
-
-.password {
-  margin: 10px 50px 10px 0;
-}
-
-/* .product-name {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-} */
-/* TODO: Move ABOVE to new css file */

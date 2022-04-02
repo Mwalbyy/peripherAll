@@ -96,7 +96,7 @@ body {
   padding: 5px;
   border: none;
   font-size: 18px;
-  color: var(--navText);
+  color: var(--blackBg);
 }
 /* styling for login dropDown */
 .dropDownLogin {
