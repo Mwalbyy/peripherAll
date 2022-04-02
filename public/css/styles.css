@@ -98,15 +98,30 @@ body {
   font-size: 18px;
   color: var(--blackBg);
 }
-/* styling for login dropDown */
+/* styling for account dropDown */
 .dropDownLogin {
   margin-top: 14px;
   background-color: var(--navHover);
   display: none;
   position: absolute;
+  min-width: 100px;
   z-index: 7;
-  padding: 2px;
 }
+/* styling for login dropdown */
+.dropDownLogin a {
+  color: var(--navText);
+  padding: 12px 12px;
+  display: block;
+  text-align: left;
+  margin-top: 0px;
+}
+/* hover effect for login dropdown */
+.dropDownLogin a:hover {
+  color: white;
+  background-color: var(--headerBg);
+  transition: .1s;
+}
+
 .profilePad{
   padding: 15px
 }
