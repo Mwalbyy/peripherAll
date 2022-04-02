@@ -1,4 +1,3 @@
-// TODO NEEDS PLANNING
 // Script for deleting reviews.
 async function deleteFormHandler(event) {
     event.preventDefault();
@@ -11,7 +10,7 @@ async function deleteFormHandler(event) {
     const response = await fetch("/api/review/" + `${id}`, {
         method: "DELETE",
         body: JSON.stringify({
-            id : id,
+            id: id,
         }),
         headers: {
             "Content-Type": 'application/json',
@@ -20,7 +19,7 @@ async function deleteFormHandler(event) {
 
     // If response is good, then refresh page to same page once review is submitted.
     if (response.ok) {
-        document.location.replace('/api/product/' + `${id}`);
+        document.location.replace('/dashboard/');
     // If not, give response error number.
     } else {
         alert(response.statusText);
