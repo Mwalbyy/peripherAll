@@ -67,7 +67,7 @@ body {
   justify-content: space-around;
   height: 30px;
 }
-
+/* moves bars to the right */
 .dropDownBtn {
   margin-left: 10px;
 }
@@ -158,18 +158,24 @@ body {
 img {
   height: 150px;
   width: auto;
-}
 
-/* tactility for the category products IMG  */
-.imgHome:hover {
-  transition: 100ms;
-  opacity: .6;
 }
 
 /* adds spacing around the category products IMG */
 .productCard {
+  display: flex;
+  flex-direction: column;
   margin-top: 70px;
   margin-bottom: 70px;
+  background-color: rgba(116, 116, 116, 0.281);
+  padding: 30px ;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.productCard:hover{
+  transition: 100ms;
+  opacity: .6;
 }
 
 /* Slideshow */
