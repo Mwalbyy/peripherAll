@@ -124,8 +124,8 @@ body {
   background-color: var(--navHover);
   display: none;
   position: absolute;
+  min-width: 100px;
   z-index: 7;
-  padding: 2px;
 }
 
 .profilePad {
