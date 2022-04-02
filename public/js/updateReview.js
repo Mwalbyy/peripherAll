@@ -14,7 +14,6 @@ async function updateFormHandler(event) {
     const response = await fetch("/api/review/" +  `${id}`, {
         method: "PUT",
         body: JSON.stringify({
-            // TODO: Make user_id dynamic.
             id: id,
             text,
             stars,
