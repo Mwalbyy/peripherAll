@@ -1,8 +1,8 @@
-// Script for submitting reviews.
-async function submitFormHandler(event) {
+// Script for updating reviews.
+async function updateFormHandler(event) {
     event.preventDefault();
 
-    // Calling the inputs from submit-review.handlebars.
+    // Calling the inputs from edit-update-review.handlebars.
     const stars = document.querySelector('#rating-entry').value.trim(); // Variable for rating input.
     const text = document.querySelector('#review-entry').value.trim(); // Variable for review input.
 
@@ -11,16 +11,12 @@ async function submitFormHandler(event) {
         window.location.toString().split('/').length - 1
     ];
 
-    const data = JSON.stringify()
-
-    const response = await fetch("/api/review", {
-        method: "POST",
+    const response = await fetch("/api/review/" +  `${id}`, {
+        method: "PUT",
         body: JSON.stringify({
-            // TODO: Make user_id dynamic.
-            user_id: 1,
+            id: id,
             text,
             stars,
-            product_id: id,
         }),
         headers: {
             "Content-Type": 'application/json',
@@ -29,11 +25,11 @@ async function submitFormHandler(event) {
 
     // If response is good, then refresh page to same page once review is submitted.
     if (response.ok) {
-        document.location.replace('/api/product/' + `${id}`);
+        document.location.replace('/dashboard/');
     // If not, give response error number.
     } else {
         alert(response.statusText);
     }
 };
 
-document.querySelector("#new-review-form").addEventListener('submit', submitFormHandler);
+document.querySelector(".update-review-form").addEventListener('submit', updateFormHandler);
