@@ -1,0 +1,26 @@
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+    background-color: #2e2e2e;
+}
+
+.signUpHeader {
+    font-size: 60px;
+}
+
+.signUpForm {
+    margin: 20px 0 20px 0;
+}
+
+.form-group {
+    margin: 10px 0 10px 0;
+}
+
+.password {
+    margin: 10px 50px 10px 0;
+}

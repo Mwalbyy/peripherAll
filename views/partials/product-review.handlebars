@@ -1,10 +1,11 @@
 {{#each products.reviews as |review|}}
-    <div class="userReviewFull">
-        <div class="userInfoReview">
-            <h2>Reviewed by: {{review.user.user_name}}</h2>
-            <h2>On: {{review.date_created}}</h2>
-            <h2 class="ratingStar">Stars: {{review.stars}}</h2>
-        </div>
-    <h2 class="reviewText"id="productReviews" class="productReviews">{{review.text}}</h2>
+<div class="userReviewFull">
+    <div class="userInfoReview">
+        <h2>{{review.user.user_name}}</h2>
+        <h2>{{review.date_created}}</h2>
+        <h2 class="ratingStar">Stars: {{review.stars}}</h2>
+    </div>
+    <h2 class="reviewText" id="productReviews" class="productReviews">{{review.text}}</h2>
+</div>
 </div>
 {{/each}}

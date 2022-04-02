@@ -1,0 +1,167 @@
+:root {
+  --deepBlack: rgb(15, 15, 15)
+}
+
+/* home button on top left */
+.homeButton {
+  cursor: pointer;
+  background-color: var(--deepBlack);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 25px;
+
+}
+
+/* centers the image at top of screen */
+.productTop {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image size and style */
+.productImage {
+  height: 500px;
+  border: 5px solid black;
+  margin: 30px 0;
+}
+
+/* styling for desc */
+.productDescription {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 150px 0 150px;
+}
+
+/* product name styling */
+.productName {
+  text-align: center;
+  border-bottom: 5px solid var(--orange);
+  font-size: 60px;
+  padding-bottom: 20px;
+  margin: 10px 152px;
+}
+
+/* max size response */
+@media only screen and (max-width: 1200px) {
+  .productImage {
+    height: 300px;
+  }
+
+  .userReviewFull {
+    margin: 25px 50px 25px 50px;
+  }
+
+  .productDescription {
+    margin: 0 50px 0 50px;
+  }
+}
+
+/* mid size response */
+@media only screen and (max-width: 992px) {
+  .productImage {
+    height: 200px;
+  }
+
+  .userReviewFull {
+    margin: 25px 25px 25px 50px;
+  }
+
+  .productDescription {
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .productImage {
+    height: 130px;
+  }
+
+  .userReviewFull {
+    margin: 25px 25px 25px 50px;
+  }
+
+  .productDescription {
+    margin: 0 20px 0 20px;
+  }
+
+  .productName {
+    margin: 10px 30px;
+  }
+}
+
+/* Product container w/name, desc and link */
+.product {
+  background-color: var(--deepBlack);
+  display: flex;
+  flex-direction: column;
+}
+
+/* styling for the product price */
+.productPrice {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* underlines link */
+.purchaseLink {
+  text-decoration: underline;
+}
+
+/* centers buy link and text */
+.productPurchase {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* underline in reviews + font */
+.userInfoReview {
+  text-align: start;
+  font-size: 12px;
+  border-bottom: solid var(--orange);
+}
+
+/* styling for the review itself */
+.reviewText {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: start;
+  font-size: 12pt;
+}
+
+/* styling that holds all of the CREATE review info  */
+.createReview {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  background-color: var(--deepBlack);
+}
+
+/* container for the text inputs */
+#new-review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+/* margin for Submit header  */
+.createReview h3 {
+  margin-bottom: 10px;
+}
+
+/* centers */
+.reviewDetails {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* makes rounded boxes */
+.userReviewFull {
+  background-color: var(--deepBlack);
+  margin: 25px 100px 25px 100px;
+  padding: 15px;
+  border-radius: 25px;
+}

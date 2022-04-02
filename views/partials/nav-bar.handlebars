@@ -1,21 +1,20 @@
 <div class="navbar">
     <div class="logo">
-        <a href="">Peripherall</a>
-    </div>
-    <div class="navLeft">
-        <button onclick="dropDown()" class="dropDownBtn btn">
-            categories
-            <i id="caret-drop" class="fa-solid fa-bars"></i>
-        </button>
-        <div id="dropDownId" class="dropDown">
-            {{#each categories as |category|}}
-            <a href="#{{this.name}}">{{{category.name}}}</a>
-            {{/each}}
+        <h1>PeripherAll</h1>
+        <div class="navLeft">
+            <button onclick="dropDown()" class="dropDownBtn btn">
+                <i id="caret-drop" class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <div id="dropDownId" class="dropDown">
+                {{#each categories as |category|}}
+                <a href="#{{this.name}}">{{{category.name}}}</a>
+                {{/each}}
+            </div>
         </div>
     </div>
     <div class="navRight">
         <button onClick="loginDrop()" class="btn spaced" href="">login
-            <i class="fa-solid fa-door-open fa-xs"></i>
+            <i class="fa-solid fa-door-open fa-xs fa-bounce"></i>
         </button>
         <div id="dropDownLoginId" class="dropDownLogin">
             <form class="signInForm">
@@ -31,9 +30,9 @@
                     <button class="login-btn btn" type="submit">login</button>
                 </div>
             </form>
-                <div class="">
-                    <a class="login-btn btn"  href="signup" type="button">Create an account</a>
-                </div>
+            <div class="">
+                <a class="login-btn btn" href="signup" type="button">Create an account</a>
+            </div>
         </div>
     </div>
 </div>

@@ -2,40 +2,40 @@
   margin: 0;
   padding: 0;
 }
-
+/* color variables */
 :root {
   --navText: #ebebeb;
   --headerBg: #2e2e2e;
   --navHover: #1f1f1f;
-  --black: black;
+  --blackBg: rgb(24,24,24);
   --orange: rgb(230, 149, 0);
   --softWhite: rgb(228, 228, 228);
 }
-
+/* links scroll to section rather than instant change */
 html {
   scroll-behavior: smooth;
 }
-
+/* removes ugly underline and color from all anchor tags/links */
 a {
   text-decoration: none;
   color: var(--navText);
 }
-
+/* styling for logo */
 .logo {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 23px;
   color: var(--orange);
   text-decoration: none;
   align-items: center;
   display: flex;
 }
-
+/* styling for all text in body + background color */
 body {
-  background-color: rgb(24, 24, 24);
+  background-color:var(--blackBg);
   font-family: 'Source Sans Pro', sans-serif;
   color: var(--navText);
 }
-
+/* replaces generic btn styling with new style  */
 .btn {
   border: none;
   outline: none;
@@ -45,19 +45,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   cursor: pointer;
 }
-
+/* changes color to match that of dropdown */
 .login-btn {
   background-color: var(--navHover);
 }
-
-.navLeft {
-}
-
-
-.navItems {
-  text-decoration: none;
-}
-
+/* all styling for the navbar */
 .navbar {
   display: flex;
   font-size: 24px;
@@ -67,63 +59,64 @@ body {
   justify-content: space-around;
   height: 30px;
 }
-
+.dropDownBtn {
+  margin-left:10px ;
+}
+/* styling used in category drop down*/
 .dropDown {
   margin-top: 13px;
   display: none ;
   position: absolute;
   background-color: var(--navHover);
-  min-width: 150px;
+  min-width: 100px;
   z-index: 7;
 }
-
+/* styling for category links in dropDown */
 .dropDown a {
-  float: none;
   color: var(--navText);
   padding: 12px 12px;
-  text-decoration: none;
   display: block;
   text-align: left;
   margin-top: 0px;
+  text-decoration: underline;
 }
-
+/* hover effect for category dropdown */
 .dropDown a:hover {
   color: white;
   background-color: var(--headerBg);
   transition: .1s;
 }
-
+/* rotates Bars next to category */
 .caretRotate {
   transform: rotate(90deg);
   transition: transform .1s;
 }
-
+/* Styling for text boxes(NOT JUST SEARCH) */
 .search {
   padding: 5px;
   border: none;
   font-size: 18px;
-  color: var(--navText);
+  color: var(--blackBg);
 }
-
+/* styling for login dropDown */
 .dropDownLogin {
   margin-top: 14px;
   background-color: var(--navHover);
   display: none;
-  position: relative;
+  position: absolute;
   z-index: 7;
-  padding: 0 10px 0 10px;
+  padding: 2px;
 }
-
-.email {
-  margin-left: 31px;
+.profilePad{
+  padding: 15px
 }
-
+/* CSS for the dropdown effect */
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
   transform-origin: top center;
 }
-
+/* CSS animation for the dropdown effect */
 @keyframes growDown {
   0% {
     transform: scaleY(0)
@@ -138,169 +131,30 @@ body {
   }
 }
 
-/* styling for categories and products */
+/* styling for all category products IMG */
 img {
   height: 150px;
   width: auto;
-  vertical-align: middle;
 }
-
+/* tactility for the category products IMG  */
 .imgHome:hover {
   transition: 100ms;
   opacity: .6;
 }
-
+/* adds spacing around the category products IMG */
 .productCard{
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
-.product {
-  background-color: var();
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.productImage {
-  
-  height: 400px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  border: 5px solid black;
-  box-shadow: 10px 10px 10px var(--navHover);
-  height: 500px;
-}
-@media only screen and (max-width: 992px) {
-  .productImage{
-    height: 200px;
-  }
-  .userReviewFull{
-    margin: 25px 50px 25px 50px;
-  }
-  
-  
-}
-
-.productName {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-
-.productDescription {
-  padding: 20px;
-  text-align: center;
-  font-size: 12px;
-  margin: 0 150px 0 150px;
-  border: 3px solid black;
-}
-
-@media only screen and (max-width:992px ) {
-.productDescription {
-margin: 0 50px 0 50px;
-}
-}
-  
-
-.productPrice {
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.productLink {
-  text-align: center;
-  text-decoration: underline;
-  --navText: rgb(23, 114, 23);
-}
-
-.homeButton .btn {
-  cursor: pointer;
-  background-color: var(--black);
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 25px;
-
-}
-
-.productPrice {
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.productLink {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.categoryName {
-  margin-left: 30px;
-  font-size: 50px;
-  background:
-    linear-gradient(
-      to right,
-      var(--orange),
-      rgb(24, 24, 24) 
-    )
-    left 
-    bottom
-    rgb(24, 24, 24)    
-    no-repeat; 
-  background-size:100% 5px ;
-}
-
-.signup {
-  text-align: center;
-  font-size: 30px;
-}
-
-.signUpHeader {
-  font-size: 60px;
-}
-
-.signUpForm {
-  margin: 20px 0 20px 0;
-}
-
-.form-group {
-  margin: 10px 0 10px 0;
-}
-
-.password {
-  margin: 10px 50px 10px 0;
-}
-
-.categoryDisplay {
-  display: flex;
-  margin-top: 40px;
-  justify-content: space-around;
-}
-@media only screen and (max-width: 1300px) {
-  .categoryDisplay{
-    flex-direction: column;
-    align-items: center;
-  }
-  .product-name {
-    font-size: 24px;
-  }
-}
-
-.product-name {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-}
-
 /* Slideshow */
 
+/* hides images by default */
 .mySlides {
   display: none
 }
 
+/* contains the slide show */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -308,7 +162,7 @@ margin: 0 50px 0 50px;
   z-index: 1;
 
 }
-
+/* styling for the arrows on slideshow */
 .prev,
 .next {
   cursor: pointer;
@@ -324,27 +178,17 @@ margin: 0 50px 0 50px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+/* styling for the arrows on slideshow */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+/* hover effect for the arrows on slideshow */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
+/* styling for the numbers on top of slideshow */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -352,7 +196,7 @@ margin: 0 50px 0 50px;
   position: absolute;
   top: 0;
 }
-
+/* styling for the dots under slideshow */
 .dot {
   cursor: pointer;
   height: 10px;
@@ -363,12 +207,12 @@ margin: 0 50px 0 50px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+/* hover for the dots under slideshow */
 .active,
 .dot:hover {
   background-color: #717171;
 }
-
+/* animation for when the images change */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -384,14 +228,6 @@ margin: 0 50px 0 50px;
   }
 }
 
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
-}
 .slideImages{
   margin-top: 25px;
   width: 100%;
@@ -400,45 +236,34 @@ margin: 0 50px 0 50px;
 }
 
 /* Slideshow */
-
-#new-review-form {
+/* containers for the products*/
+.categoryDisplay {
   display: flex;
-  flex-direction: column;
-  padding: 0 100px;
+  margin-top: 40px;
+  justify-content: space-around;
 }
-
-.createReview {
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 65px;
-}
-.createReview h3 {
-  margin-bottom: 20px;
-}
-
-.userInfoReview {
-  text-align: start;
-  font-size: 12px;
-  border-bottom: solid var(--orange);
+@media only screen and (max-width: 1300px) {
+  .categoryDisplay{
+    flex-direction: column;
+    align-items: center;
   }
-  
-
-.reviewDetails {
-  text-align: center;
-  font-size: 12px;
+  .product-name {
+    font-size: 24px;
+  }
 }
-
-.userReviewFull {
-  border: 5px solid black;
-  margin: 25px 100px 25px 100px;
-  padding: 5px;
-
-}
-
-.reviewText {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: start;
-  font-size: 12pt;
-  
+/* styling for the categoryName underline */
+.categoryName {
+  margin-left: 30px;
+  font-size: 50px;
+  background:
+    linear-gradient(
+      to right,
+      var(--orange),
+      rgb(24, 24, 24) 
+    )
+    left 
+    bottom
+    rgb(24, 24, 24)    
+    no-repeat; 
+  background-size:100% 5px ;
 }
