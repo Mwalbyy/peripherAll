@@ -1,10 +1,13 @@
 {{#each reviews as |review|}}
-<div>
-    <div>
-        <h2><a href = "/dashboard/update/{{id}}">Your review for: {{product.name}}</a></h2>
+<div class="userReviewFull">
+    <div class="userInfoReview">
+        <h2>Your review for: {{product.name}}</h2>
         <h2>Reviewed on: {{date_created}}</h2>
-        <h2>Your rating: {{stars}}</h2>
-        <h2>Your review description: {{text}}</h2>
+        <h2 class="ratingStar">Your rating: {{stars}}</h2>
     </div>
+    <h2 class="reviewText">Your review description: {{text}}</h2>
+</div>
+<div class="productLink">
+    <a class = "btn" href = "/dashboard/update/{{id}}" type = "button">Update or Delete</a>
 </div>
 {{/each}}
