@@ -2,24 +2,28 @@
   margin: 0;
   padding: 0;
 }
+
 /* color variables */
 :root {
   --navText: #ebebeb;
   --headerBg: #2e2e2e;
   --navHover: #1f1f1f;
-  --blackBg: rgb(24,24,24);
+  --blackBg: rgb(24, 24, 24);
   --orange: rgb(230, 149, 0);
   --softWhite: rgb(228, 228, 228);
 }
+
 /* links scroll to section rather than instant change */
 html {
   scroll-behavior: smooth;
 }
+
 /* removes ugly underline and color from all anchor tags/links */
 a {
   text-decoration: none;
   color: var(--navText);
 }
+
 /* styling for logo */
 .logo {
   font-weight: bold;
@@ -29,12 +33,14 @@ a {
   align-items: center;
   display: flex;
 }
+
 /* styling for all text in body + background color */
 body {
-  background-color:var(--blackBg);
+  background-color: var(--blackBg);
   font-family: 'Source Sans Pro', sans-serif;
   color: var(--navText);
 }
+
 /* replaces generic btn styling with new style  */
 .btn {
   border: none;
@@ -45,10 +51,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   cursor: pointer;
 }
+
 /* changes color to match that of dropdown */
 .login-btn {
   background-color: var(--navHover);
 }
+
 /* all styling for the navbar */
 .navbar {
   display: flex;
@@ -59,18 +67,21 @@ body {
   justify-content: space-around;
   height: 30px;
 }
+/* moves bars to the right */
 .dropDownBtn {
-  margin-left:10px ;
+  margin-left: 10px;
 }
+
 /* styling used in category drop down*/
 .dropDown {
   margin-top: 13px;
-  display: none ;
+  display: none;
   position: absolute;
   background-color: var(--navHover);
   min-width: 100px;
   z-index: 7;
 }
+
 /* styling for category links in dropDown */
 .dropDown a {
   color: var(--navText);
@@ -80,17 +91,20 @@ body {
   margin-top: 0px;
   text-decoration: underline;
 }
+
 /* hover effect for category dropdown */
 .dropDown a:hover {
   color: white;
   background-color: var(--headerBg);
   transition: .1s;
 }
+
 /* rotates Bars next to category */
 .caretRotate {
   transform: rotate(90deg);
   transition: transform .1s;
 }
+
 /* Styling for text boxes(NOT JUST SEARCH) */
 .search {
   padding: 5px;
@@ -98,6 +112,12 @@ body {
   font-size: 18px;
   color: var(--blackBg);
 }
+
+/* color for the login dropdown */
+.whiteTxt {
+  color: var(--navText);
+}
+
 /* styling for login dropDown */
 .dropDownLogin {
   margin-top: 14px;
@@ -107,15 +127,18 @@ body {
   z-index: 7;
   padding: 2px;
 }
-.profilePad{
+
+.profilePad {
   padding: 15px
 }
+
 /* CSS for the dropdown effect */
 .show {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
   transform-origin: top center;
 }
+
 /* CSS animation for the dropdown effect */
 @keyframes growDown {
   0% {
@@ -135,16 +158,24 @@ body {
 img {
   height: 150px;
   width: auto;
+
 }
-/* tactility for the category products IMG  */
-.imgHome:hover {
-  transition: 100ms;
-  opacity: .6;
-}
+
 /* adds spacing around the category products IMG */
-.productCard{
+.productCard {
+  display: flex;
+  flex-direction: column;
   margin-top: 70px;
   margin-bottom: 70px;
+  background-color: rgba(116, 116, 116, 0.281);
+  padding: 30px ;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.productCard:hover{
+  transition: 100ms;
+  opacity: .6;
 }
 
 /* Slideshow */
@@ -162,6 +193,7 @@ img {
   z-index: 1;
 
 }
+
 /* styling for the arrows on slideshow */
 .prev,
 .next {
@@ -178,16 +210,19 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 /* styling for the arrows on slideshow */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 /* hover effect for the arrows on slideshow */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 /* styling for the numbers on top of slideshow */
 .numbertext {
   color: #f2f2f2;
@@ -196,6 +231,7 @@ img {
   position: absolute;
   top: 0;
 }
+
 /* styling for the dots under slideshow */
 .dot {
   cursor: pointer;
@@ -207,11 +243,13 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 /* hover for the dots under slideshow */
 .active,
 .dot:hover {
   background-color: #717171;
 }
+
 /* animation for when the images change */
 .fade {
   animation-name: fade;
@@ -228,7 +266,7 @@ img {
   }
 }
 
-.slideImages{
+.slideImages {
   margin-top: 25px;
   width: 100%;
   height: auto;
@@ -242,28 +280,25 @@ img {
   margin-top: 40px;
   justify-content: space-around;
 }
+
 @media only screen and (max-width: 1300px) {
-  .categoryDisplay{
+  .categoryDisplay {
     flex-direction: column;
     align-items: center;
   }
+
   .product-name {
     font-size: 24px;
   }
 }
+
 /* styling for the categoryName underline */
 .categoryName {
   margin-left: 30px;
   font-size: 50px;
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       var(--orange),
-      rgb(24, 24, 24) 
-    )
-    left 
-    bottom
-    rgb(24, 24, 24)    
-    no-repeat; 
-  background-size:100% 5px ;
+      rgb(24, 24, 24)) left bottom rgb(24, 24, 24) no-repeat;
+  background-size: 100% 5px;
 }

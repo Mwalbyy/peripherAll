@@ -49,4 +49,28 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+router.get('/NL/:id', async (req, res) => {
+  try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [
+          { model: Review, 
+          attributes: ['id', 'product_id', 'date_created', 'user_id', 'stars', 'text'],
+          include: {
+            model: User,
+            attributes: ['user_name'],
+          }
+          },
+        ],
+      });
+      
+      const products = productData.get({ plain:true });
+      res.render('productpageNL', {
+          products
+      })
+
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
+
 module.exports = router;
