@@ -157,10 +157,10 @@ body {
   text-align: center;
   border: 1px solid var(--orange);
   font-size: 20px;
-  padding-bottom: 5px;
+  padding: 12px 12px;
   margin: 10px 25px;
-  
 }
+
 /* Center buttons */
 .center {
   display: flex;
@@ -338,6 +338,7 @@ img {
 
 .footerDiv {
   display: block;
+  margin-top: 10px;
 }
 
 .footer {
