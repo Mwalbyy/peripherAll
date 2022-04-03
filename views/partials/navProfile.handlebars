@@ -1,25 +1,23 @@
 <div class="navbar">
     <div class="logo">
         <h1>PeripherAll</h1>
-    <div class="navLeft">
-        <button onclick="dropDown()" class="dropDownBtn btn">
-            <i id="caret-drop" class="fa-solid fa-bars fa-lg"></i>
-        </button>
-        <div id="dropDownId" class="dropDown">
-            {{#each categories as |category|}}
-            <a href="#{{this.name}}">{{{category.name}}}</a>
-            {{/each}}
+        <div class="navLeft">
+            <button onclick="dropDown()" class="dropDownBtn btn">
+                <i id="caret-drop" class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <div id="dropDownId" class="dropDown">
+                {{#each categories as |category|}}
+                <a href="#{{this.name}}">{{{category.name}}}</a>
+                {{/each}}
+            </div>
         </div>
-    </div>
     </div>
     <div class="navRight">
         <button onClick="loginDrop()" class="btn spaced" href="">
             <i class="fa-solid fa-user fa-lg"></i>
         </button>
         <div id="dropDownLoginId" class="dropDownLogin profilePad">
-            <a href="#">Bookmarks
-                <i class="fa-solid fa-bookmark fa-xs"></i>
-            </a>
+            <i class="fa-solid fa-bookmark fa-xs"></i>
             <a href="dashboard/">Dashboard</a>
         </div>
     </div>

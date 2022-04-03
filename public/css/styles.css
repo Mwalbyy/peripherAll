@@ -11,6 +11,7 @@
   --blackBg: rgb(24, 24, 24);
   --orange: rgb(230, 149, 0);
   --softWhite: rgb(228, 228, 228);
+  --bo2Aqua: rgb(42, 141, 255);
 }
 
 /* links scroll to section rather than instant change */
@@ -223,15 +224,6 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* styling for the numbers on top of slideshow */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* styling for the dots under slideshow */
 .dot {
   cursor: pointer;
@@ -298,7 +290,7 @@ img {
   font-size: 50px;
   background:
     linear-gradient(to right,
-      var(--orange),
+      var(--bo2Aqua),
       rgb(24, 24, 24)) left bottom rgb(24, 24, 24) no-repeat;
   background-size: 100% 5px;
 }
