@@ -8,5 +8,15 @@
         "user_name": "DanK",
         "email": "sunbeardankim@gmail.com",
         "password": "password123"
+    },
+    {
+        "user_name": "BenjaminF",
+        "email": "benjamin@gmail.com",
+        "password": "password123"
+    },
+    {
+        "user_name": "GeorgeW",
+        "email": "george@gmail.com",
+        "password": "password123"
     }
 ]
