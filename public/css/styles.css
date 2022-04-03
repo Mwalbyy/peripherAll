@@ -335,3 +335,14 @@ img {
       rgb(24, 24, 24)) left bottom rgb(24, 24, 24) no-repeat;
   background-size: 100% 5px;
 }
+
+.footerDiv {
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: var(--headerBg);
+  color: white;
+}
