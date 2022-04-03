@@ -155,10 +155,10 @@ body {
 /* For buttons delete/update */
 .buttonsDU {
   text-align: center;
-  border: 2px solid var(--orange);
+  border: 1px solid var(--orange);
   font-size: 20px;
-  padding-bottom: 10px;
-  margin: 10px 20px;
+  padding-bottom: 5px;
+  margin: 10px 25px;
   
 }
 /* Center buttons */
