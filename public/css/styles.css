@@ -128,6 +128,20 @@ body {
   z-index: 7;
 }
 
+.dropDownLogin a {
+  color: var(--navText);
+  padding: 12px 12px;
+  display: block;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.dropDownLogin a:hover {
+  color: white;
+  background-color: var(--headerBg);
+  transition: .1s;
+}
+
 .profilePad {
   padding: 15px
 }
@@ -137,6 +151,24 @@ body {
   display: block;
   animation: growDown 150ms ease-in-out forwards;
   transform-origin: top center;
+}
+/* For buttons delete/update */
+.buttonsDU {
+  text-align: center;
+  border: 1px solid var(--orange);
+  font-size: 20px;
+  padding: 12px 12px;
+  margin: 10px 25px;
+}
+
+/* Center buttons */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  margin: auto;
+  width: 20%;
 }
 
 /* CSS animation for the dropdown effect */
@@ -232,6 +264,7 @@ img {
   top: 0;
 }
 
+
 /* styling for the dots under slideshow */
 .dot {
   cursor: pointer;
@@ -301,4 +334,16 @@ img {
       var(--orange),
       rgb(24, 24, 24)) left bottom rgb(24, 24, 24) no-repeat;
   background-size: 100% 5px;
+}
+
+.footerDiv {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: var(--headerBg);
+  color: white;
 }

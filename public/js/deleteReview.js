@@ -18,7 +18,7 @@ async function deleteFormHandler(event) {
     });
 
     // If response is good, then refresh page to same page once review is submitted.
-    if (response.ok) {
+    if(window.confirm("Are you sure you want to delete this?")) {(response.ok),
         document.location.replace('/dashboard/');
     // If not, give response error number.
     } else {

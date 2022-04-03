@@ -137,11 +137,16 @@
   margin-top: 25px;
   margin-bottom: 20px;
   padding: 20px 0;
-  background-color: var(--deepBlack);
 }
 
 /* container for the text inputs */
 #new-review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.new-review-form {
   display: flex;
   flex-direction: column;
   padding: 0 100px;
