@@ -3,15 +3,18 @@
     <h2 class="productName">Update or Delete your Reviews</h2>
     <form class = "new-review-form update-review-form">
         <!-- For updating rating/stars. -->
-        <label>You rating: </label>
+        <label>You rating: </label><br>
         <input class="search"id = "rating-entry" type = "text" value = "{{reviews.stars}}" />
+        <br>
 
         <!-- For updating review text. -->
-        <label>Your review: </label>
-        <textarea class="search"id = "review-entry" type = "text" value = "{{reviews.text}}" />{{reviews.text}}</textarea>
+        <label>Your review: </label><br>
+        <textarea class="search"id = "review-entry" type = "text" value = "{{reviews.text}}" />{{reviews.text}}</textarea><br>
         <div>
             <button class="buttonsDU btn" type = "submit">Update</button>
         </div>
+        
+        <br>
         <div>
             <button class="delete-review-btn buttonsDU btn" type = "button">Delete</button>
         </div>
