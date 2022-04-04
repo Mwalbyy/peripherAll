@@ -1,8 +1,7 @@
-const req = require("express/lib/request");
-
 // Script for submitting reviews.
 async function submitFormHandler(event) {
     event.preventDefault();
+    console.log('stars');
 
     // Calling the inputs from submit-review.handlebars.
     const stars = document.querySelector('#rating-entry').value.trim(); // Variable for rating input.
@@ -12,6 +11,7 @@ async function submitFormHandler(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
+    console.log(id)
 
     const response = await fetch("/api/review", {
         
@@ -19,7 +19,7 @@ async function submitFormHandler(event) {
         
         body: JSON.stringify({
             // TODO: Make user_id dynamic.
-            user_id: 2,
+            // user_id: 2,
             text,
             stars,
             product_id: id,

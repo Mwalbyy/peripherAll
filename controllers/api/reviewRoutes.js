@@ -49,9 +49,16 @@ router.get('/:id', async (req, res) => {
 //create review
 router.post('/', async (req, res) => {
     try {
-        const reviewData = await Review.create(req.body);
+        console.log(req.body.product_id);
+        const reviewData = await Review.create({
+            text: req.body.text, 
+            stars: req.body.stars, 
+            product_id: req.body.product_id, 
+            user_id: req.session.user_id
+        });
         res.status(200).json(reviewData);
     } catch(err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
