@@ -18,8 +18,6 @@ async function submitFormHandler(event) {
         method: "POST",
         
         body: JSON.stringify({
-            // TODO: Make user_id dynamic.
-            // user_id: 2,
             text,
             stars,
             product_id: id,
