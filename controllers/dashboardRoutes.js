@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Product, Review, User } = require('../models');
 const withAuth = require('../utils/auth');
+console.log('user_id')
 
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
-        attributes: ['id', 'product_id', 'date_created', 'stars', 'text'],
         include: [
             {
                 model: User,
@@ -16,12 +16,11 @@ router.get('/', async (req,res) => {
                 attributes: ['name'],
             }
         ],
-    })
+    });
         const reviews = reviewData.map((review) => review.get({ plain: true }));
             res.render('dashboard', {
                 reviews,
                 logged_in: true,
-                user_name: req.session.user_name,
             });
     } catch(err) {
         res.status(500).json(err);

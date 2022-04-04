@@ -13,15 +13,13 @@ async function submitFormHandler(event) {
         window.location.toString().split('/').length - 1
     ];
 
-    const data = JSON.stringify()
-
     const response = await fetch("/api/review", {
         
         method: "POST",
         
         body: JSON.stringify({
             // TODO: Make user_id dynamic.
-            user_id: req.session.id,
+            user_id: 2,
             text,
             stars,
             product_id: id,
