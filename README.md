@@ -1,4 +1,4 @@
-<h1><a href="">OUR TITLE HERE</a></h1>
+<h1><a href="">PeripherAll</a></h1>
 
 
 ## Description
@@ -12,13 +12,16 @@ A user can search computer peripherals accross different categpries and recieve 
 4. Below all of that information you can leave a review for the product using the account you made from the login page.
 
 ## Homepage display of website
-![homepage]()
+![homepage](./public/assets/readmeImages/homepage.png)
+
+## Category on Homepage
+![category](./public/assets/readmeImages/categories.png)
 
 ## Individual product page
-![product page]()
+![product page](./public/assets/readmeImages/product-page.png)
 
 ## Review
-![review]()
+![review](./public/assets/readmeImages/review.png)
 
 ## Signup page
 ![sign up](./public/assets/readmeImages/signup-page.png)
@@ -34,6 +37,6 @@ A user can search computer peripherals accross different categpries and recieve 
 
 [![Link to Sami's github](https://img.shields.io/badge/Sami%20-GitHub-blue)](https://github.com/SamiF812)
 
-[![Link to Dylan's Walby's github](https://img.shields.io/badge/Dylan%20-GitHub-blue)](https://github.com/dyl-17)
+[![Link to Dylan's github](https://img.shields.io/badge/Dylan%20-GitHub-blue)](https://github.com/dyl-17)
 
 [![MIT](https://img.shields.io/badge/License%20-MIT-orange)](https://opensource.org/licenses/MIT)

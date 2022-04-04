@@ -40,7 +40,13 @@ router.post('/login', async (req, res) => {
 
         // if it matches this sends them back to front end
         res.json(existingUser);
-  
+
+        req.session.save(() => {
+          req.session.email = existingUser.email;
+          req.session.logged_in = true;
+          
+          res.json({ user: userData, message: 'You are now logged in!' });
+        });
       }
         catch (err) {
         res.status(400).json(err);

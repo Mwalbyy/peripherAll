@@ -1,5 +1,6 @@
 :root {
-  --deepBlack: rgb(15, 15, 15)
+  --deepBlack: rgb(15, 15, 15);
+  --bo2Aqua: rgb(42, 141, 255);
 }
 
 /* home button on top left */
@@ -37,7 +38,7 @@
 /* product name styling */
 .productName {
   text-align: center;
-  border-bottom: 5px solid var(--orange);
+  border-bottom: 5px solid var(--bo2Aqua);
   font-size: 60px;
   padding-bottom: 20px;
   margin: 10px 152px;
@@ -120,7 +121,7 @@
 .userInfoReview {
   text-align: start;
   font-size: 12px;
-  border-bottom: solid var(--orange);
+  border-bottom: solid var(--bo2Aqua);
 }
 
 /* styling for the review itself */
