@@ -18,16 +18,20 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/login", async (req, res) => {
   try {
 
-    const userData = await User.findOne({ where: { email: req.body.email } });
+    const userData = await User.findOne({ where: { email: req.body.email }});
+    if (userData === null) {
+      console.log('Not found!');
+    } else {
+      console.log(userData instanceof User);
+      console.log(userData.email); 
+    }
     console.log(userData)
     
     if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+      res.status(400).json({ message: 'data did not match' });
       return;
     }
     
@@ -37,9 +41,6 @@ router.post("/", async (req, res) => {
       );
       
       if (!doesPasswordMatch) {res.json({ msg: `data did not match` }); return};
-      
-      res.json(userData);
-      console.log(userData);
       
       req.session.save(() => {
         req.session.email = userData.email;
