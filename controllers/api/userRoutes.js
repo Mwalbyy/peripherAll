@@ -18,41 +18,6 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
-router.post('/login', async (req, res) => {
-    try {
-        const {email, password} = req.body;
-
-        // find a user from the DB
-        const existingUser = await User.findOne({ email: email});
-        
-        // if no user is found
-        if(!existingUser) return res.json({ msg: `data did not match` })
-
-        // if the user is found in the DB, compare password with hashed password
-        const doesPasswordMatch = bcrypt.compareSync(password, existingUser.password);
-
-        // if the password does not match
-        if(!doesPasswordMatch) return res.json({ msg: `data did not match` });
-
-        // if it matches this sends them back to front end
-        res.json(existingUser);
-
-        req.session.save(() => {
-          req.session.email = existingUser.email;
-          req.session.logged_in = true;
-          
-          res.json({ user: userData, message: 'You are now logged in!' });
-        });
-      }
-        catch (err) {
-        res.status(400).json(err);
-      }
-    })
-  
-  module.exports = router;
-  
-=======
 router.post("/login", async (req, res) => {
   try {
 
@@ -90,4 +55,3 @@ router.post("/login", async (req, res) => {
 });
 
 module.exports = router;
->>>>>>> 6b7580e35012700b0b9787a890a437f74fe66c07

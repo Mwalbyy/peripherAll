@@ -6,7 +6,6 @@ console.log('user_id')
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
-        where: {user_id: req.session.id},
         include: [
             {
                 model: User,
