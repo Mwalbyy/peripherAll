@@ -28,7 +28,7 @@ router.post("/login", async (req, res) => {
       console.log(userData instanceof User);
       console.log(userData.email); 
     }
-    console.log(userData)
+    console.log(userData.id)
     
     if (!userData) {
       res.status(400).json({ message: 'data did not match' });
