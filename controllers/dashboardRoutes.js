@@ -5,12 +5,10 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
-        where: {
-            user_id: req.session.user_id,
-        },
         include: [
             {
                 model: User,
+                where: {email: req.session.email},
                 attributes: ['user_name'],
             },
             {
