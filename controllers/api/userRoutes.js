@@ -28,7 +28,7 @@ router.post('/login', async (req, res) => {
 
         // find a user from the DB
         const existingUser = await User.findOne({ email: email});
-
+        
         // if no user is found
         if(!existingUser) return res.json({ msg: `data did not match` })
 

@@ -1,14 +1,15 @@
 const router = require('express').Router();
 const { Product, Review, User } = require('../models');
 const withAuth = require('../utils/auth');
+console.log('user_id')
 
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
+        where: {user_id: req.session.id},
         include: [
             {
                 model: User,
-                where: {email: req.session.email},
                 attributes: ['user_name'],
             },
             {
@@ -21,7 +22,6 @@ router.get('/', async (req,res) => {
             res.render('dashboard', {
                 reviews,
                 logged_in: true,
-
             });
     } catch(err) {
         res.status(500).json(err);
