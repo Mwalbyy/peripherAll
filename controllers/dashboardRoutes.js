@@ -5,6 +5,9 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req,res) => {
     try {
     const reviewData = await Review.findAll({
+        where: {
+            user_id: req.session.user_id,
+        },
         attributes: ['id', 'product_id', 'date_created', 'stars', 'text'],
         include: [
             {
