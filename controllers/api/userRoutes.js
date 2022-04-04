@@ -1,27 +1,24 @@
-const router = require('express').Router();
-const { User } = require('../../models');
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
+const router = require("express").Router();
+const { User } = require("../../models");
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
 
-router.post('/signup', async (req, res) => {
-try {
+router.post("/signup", async (req, res) => {
+  try {
+    const { name, email, password } = req.body;
 
-    const {name, email, password} = req.body;
-    
     const newUser = await User.create({
-      
       user_name: name,
       email: email,
-      password: password
+      password: password,
     });
-    console.log(newUser)
     res.json(newUser);
-    
-} catch (err) {
+  } catch (err) {
     res.status(400).json(err);
   }
 });
 
+<<<<<<< HEAD
 router.post('/login', async (req, res) => {
     try {
         const {email, password} = req.body;
@@ -55,3 +52,42 @@ router.post('/login', async (req, res) => {
   
   module.exports = router;
   
+=======
+router.post("/login", async (req, res) => {
+  try {
+
+    const userData = await User.findOne({ where: { email: req.body.email }});
+    if (userData === null) {
+      console.log('Not found!');
+    } else {
+      console.log(userData instanceof User);
+      console.log(userData.email); 
+    }
+    console.log(userData)
+    
+    if (!userData) {
+      res.status(400).json({ message: 'data did not match' });
+      return;
+    }
+    
+    const doesPasswordMatch = bcrypt.compareSync(
+      req.body.password,
+      userData.password
+      );
+      
+      if (!doesPasswordMatch) {res.json({ msg: `data did not match` }); return};
+      
+      req.session.save(() => {
+        req.session.email = userData.email;
+        req.session.logged_in = true;
+        console.log(userData);
+        
+        res.json({ user: userData, message: "You are now logged in!" });
+      });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+module.exports = router;
+>>>>>>> 6b7580e35012700b0b9787a890a437f74fe66c07
