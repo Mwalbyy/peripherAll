@@ -1,3 +1,5 @@
+const req = require("express/lib/request");
+
 // Script for submitting reviews.
 async function submitFormHandler(event) {
     event.preventDefault();
@@ -14,10 +16,12 @@ async function submitFormHandler(event) {
     const data = JSON.stringify()
 
     const response = await fetch("/api/review", {
+        
         method: "POST",
+        
         body: JSON.stringify({
             // TODO: Make user_id dynamic.
-            user_id: 1,
+            user_id: req.session.id,
             text,
             stars,
             product_id: id,
