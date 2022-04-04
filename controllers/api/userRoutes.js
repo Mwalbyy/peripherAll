@@ -43,6 +43,7 @@ router.post("/login", async (req, res) => {
       if (!doesPasswordMatch) {res.json({ msg: `data did not match` }); return};
       
       req.session.save(() => {
+        req.session.user_id = userData.id;
         req.session.email = userData.email;
         req.session.logged_in = true;
         console.log(userData);
