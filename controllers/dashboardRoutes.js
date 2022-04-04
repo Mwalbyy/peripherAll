@@ -8,7 +8,6 @@ router.get('/', async (req,res) => {
         where: {
             user_id: req.session.user_id,
         },
-        attributes: ['id', 'product_id', 'date_created', 'stars', 'text'],
         include: [
             {
                 model: User,
@@ -19,12 +18,12 @@ router.get('/', async (req,res) => {
                 attributes: ['name'],
             }
         ],
-    })
+    });
         const reviews = reviewData.map((review) => review.get({ plain: true }));
             res.render('dashboard', {
                 reviews,
                 logged_in: true,
-                user_name: req.session.user_name,
+
             });
     } catch(err) {
         res.status(500).json(err);
